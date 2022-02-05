@@ -138,15 +138,24 @@ router.post("/login", isLoggedOut, (req, res, next) => {
 
 // EDIT POUR LE USER
 
-router.post("/user/edit/:id", isLoggedIn, (req, res) => {
-  const { lastname, firstname, image, password, email, birthdate, gender} = req.body;
-  const userid = req.params.id;
-  User.findByIdAndUpdate({_id:userid}, {lastname, firstname, image, password, email, birthdate, gender})
-      .then((user) => {
-      return res.json(user);
-      })
- .catch((err) => {
-  return res.status(500).json({ errorMessage: error.message });
+router.put("/user", isLoggedIn, (req, res) => {
+  const { lastname, firstname, image, birthdate, gender} = req.body;
+
+  const userid = req.session.user._id
+  User.findByIdAndUpdate({_id:userid}, {
+    lastname: lastname,
+    firstname: firstname,
+    image: image,
+    // password: password,
+    // email,
+    birthdate,
+    gender
+  }, {new: true})
+  .then((user) => {
+    return res.json(user);
+  })
+  .catch((err) => {
+    return res.status(500).json({ errorMessage: err.message });
   });
 });
 
