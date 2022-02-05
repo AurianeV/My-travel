@@ -15,6 +15,10 @@ const userSchema = new Schema(
     },
     image: String,
 
+    favoris:[{
+      type: Schema.Types.ObjectId, ref: 'Destination'
+    }]
+
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`

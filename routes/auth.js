@@ -146,16 +146,14 @@ router.put("/user", isLoggedIn, (req, res) => {
     lastname: lastname,
     firstname: firstname,
     image: image,
-    // password: password,
-    // email,
     birthdate,
     gender
-  }, {new: true})
-  .then((user) => {
-    return res.json(user);
-  })
-  .catch((err) => {
-    return res.status(500).json({ errorMessage: err.message });
+      }, {new: true})
+      .then((user) => {
+        return res.json(user);
+      })
+      .catch((err) => {
+        return res.status(500).json({ errorMessage: err.message });
   });
 });
 
