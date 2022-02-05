@@ -3,9 +3,16 @@ const authRoutes = require("./auth");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  res.json("All good in here");
+  res.json("PAGE D'ACCUEIL");
 });
 
-router.use("/auth", authRoutes);
+/* GET page idées destination */
+
+router.get("/ideas", (req, res, next) => {
+  res.json("PAGE LISTE DESTINATIONS");
+});
+
+
+
 
 module.exports = router;
