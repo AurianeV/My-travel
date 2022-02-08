@@ -59,7 +59,7 @@ router.get("/resultats", isLoggedIn, (req, res, next) => {
   res.json("resultats");
   Destination.find({}) 
   .then(myDestination => {
-     response.json("recipes", {myDestination})
+     response.json("destination", {myDestination})
   })
 });
 
@@ -67,7 +67,7 @@ router.get("/resultats", isLoggedIn, (req, res, next) => {
 
 router.get("/destination/:id", isLoggedIn, (req, res, next) => {
   const id = req.params.id
-  res.json("resultats");
+  res.json("ville");
   Destination.findById(id) 
   .then(myDestination => {
      res.json({destination: myDestination})
@@ -77,7 +77,7 @@ router.get("/destination/:id", isLoggedIn, (req, res, next) => {
 /* PUT Éditer les champs des utilisateurs pour mettre en favoris */
 
 router.put("/favoris", isLoggedIn, (req, res) => {
-  const { country, image, city} = req.body;
+  const { country, image, city} = req.params;
 
   const cityid = req.session.city._id
   Destination.findByIdAndUpdate({_id:cityid}, {
