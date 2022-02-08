@@ -143,11 +143,11 @@ router.put("/user", isLoggedIn, (req, res) => {
 
   const userid = req.session.user._id
   User.findByIdAndUpdate({_id:userid}, {
-    lastname: lastname,
-    firstname: firstname,
-    image: image,
+    lastname,
+    firstname,
+    image,
     birthdate,
-    gender
+    gender,
       }, {new: true})
       .then((user) => {
         return res.json(user);
