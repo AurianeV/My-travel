@@ -76,7 +76,22 @@ router.get("/destination/:id", isLoggedIn, (req, res, next) => {
 
 /* PUT Éditer les champs des utilisateurs pour mettre en favoris */
 
+router.put("/favoris", isLoggedIn, (req, res) => {
+  const { country, image, city} = req.body;
 
+  const cityid = req.session.city._id
+  Destination.findByIdAndUpdate({_id:cityid}, {
+    country: country,
+    image: image,
+    city: city,
+      }, {new: true})
+      .then((destinations) => {
+        return res.json(destinations);
+      })
+      .catch((err) => {
+        return res.status(500).json({ errorMessage: err.message });
+  });
+});
 
 
 

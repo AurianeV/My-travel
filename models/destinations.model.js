@@ -8,6 +8,8 @@ const destinationSchema = new Schema(
         enum: ['Afrique', 'Europe', 'Asie', 'Océanie', 'Amérique du Nord', 'Amérique du Sud', 'Antarctique']
     },
 
+    image:String,
+
     country: String,
     city: String,
 
