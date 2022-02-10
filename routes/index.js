@@ -3,19 +3,15 @@ const authRoutes = require("./auth");
 const isLoggedOut = require("../middleware/isLoggedOut");
 const isLoggedIn = require("../middleware/isLoggedIn");
 const Destination = require("../models/destinations.model");
-const User = require("../models/User.model")
-const mongoose = require('mongoose')
+const User = require("../models/User.model");
+const mongoose = require('mongoose');
 
 
 /*GET recherche de destinations */
 router.get("/destinations", (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
   const filters = {}
-<<<<<<< HEAD
   console.log("test", req.query)
-=======
-  // req.params = {city : "Paris"}
->>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
 
   if (req.query.continent) {
     // le user a choisi un ou plusieurs continents
@@ -44,19 +40,11 @@ router.get("/destinations", (req, res, next) => {
     filters.mood = {$in: req.query.mood}
   }
 
-<<<<<<< HEAD
 console.log("hello", filters)
   Destination.find(filters)
   .then(myDestinations => {
     console.log("destinations", myDestinations)
     res.json({ destinations : myDestinations })
-=======
-console.log(filters)
-  Destination.find(filters) // filters = {}
-  .then(myDestination => {
-    console.log("destinations", myDestination)
-    res.json({ destination: myDestination })
->>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
   })
   .catch(error => {
     console.log(error)
@@ -64,19 +52,6 @@ console.log(filters)
   })
 });
 
-<<<<<<< HEAD
-=======
-/* GET Aperçu des destinations filtrées */ /*BUG*/
-
-router.get("/resultats", isLoggedIn, (req, res, next) => {
-  res.json("resultats");
-  Destination.find(filters) 
-  .then(myDestination => {
-     res.json("destinations", {myDestination})
-  })
-});
-
->>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
 /* GET Ville précise */
 
 router.get("/destinations/:id", isLoggedIn, (req, res, next) => {
@@ -108,6 +83,25 @@ router.put("/favoris", isLoggedIn, (req, res) => {
   });
 });
 
+
+
+
+/* GET Destinations dans page favoris*/
+
+router.get('/favoris', isLoggedIn, (req, res, next) => {
+  const {image, city, country} = req.body;
+  const userid = req.session.user._id
+  
+  User.findById({_id:userid})
+  .populate('favoris')
+  .then((user) => {
+    res.json({"destinations": user.favoris})
+  })
+  .catch(error => {
+    return res.status(500).json({ errorMessage: error.message });
+  })
+  
+ });
 
 
 module.exports = router;
