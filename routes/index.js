@@ -8,10 +8,14 @@ const mongoose = require('mongoose')
 
 
 /*GET recherche de destinations */
-router.get("/destinations", isLoggedIn, (req, res, next) => {
+router.get("/destinations", (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
   const filters = {}
+<<<<<<< HEAD
   console.log("test", req.query)
+=======
+  // req.params = {city : "Paris"}
+>>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
 
   if (req.query.continent) {
     // le user a choisi un ou plusieurs continents
@@ -29,17 +33,30 @@ router.get("/destinations", isLoggedIn, (req, res, next) => {
     filters.temperature = {$in: req.query.temperature }
   }
 
+  if (req.params.city) {
+    // le user a choisi une ou plusieurs températures
+    filters.city = {$in: req.params.city }
+  }
+
 
   if (req.query.mood) {
     // le user a choisi une ou plusieurs activités
     filters.mood = {$in: req.query.mood}
   }
 
+<<<<<<< HEAD
 console.log("hello", filters)
   Destination.find(filters)
   .then(myDestinations => {
     console.log("destinations", myDestinations)
     res.json({ destinations : myDestinations })
+=======
+console.log(filters)
+  Destination.find(filters) // filters = {}
+  .then(myDestination => {
+    console.log("destinations", myDestination)
+    res.json({ destination: myDestination })
+>>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
   })
   .catch(error => {
     console.log(error)
@@ -47,6 +64,19 @@ console.log("hello", filters)
   })
 });
 
+<<<<<<< HEAD
+=======
+/* GET Aperçu des destinations filtrées */ /*BUG*/
+
+router.get("/resultats", isLoggedIn, (req, res, next) => {
+  res.json("resultats");
+  Destination.find(filters) 
+  .then(myDestination => {
+     res.json("destinations", {myDestination})
+  })
+});
+
+>>>>>>> 281c3eb9e7f259c76264b2cf55ce8baaac8f507f
 /* GET Ville précise */
 
 router.get("/destinations/:id", isLoggedIn, (req, res, next) => {
