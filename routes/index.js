@@ -4,20 +4,12 @@ const isLoggedOut = require("../middleware/isLoggedOut");
 const isLoggedIn = require("../middleware/isLoggedIn");
 const Destination = require("../models/destinations.model");
 
-/* GET home page */
-router.get("/", (req, res, next) => {
-  res.json("PAGE D'ACCUEIL");
-});
-
-/* GET page idées destination */
-router.get("/ideas", (req, res, next) => {
-  res.json("PAGE LISTE DESTINATIONS");
-});
 
 /*GET recherche de destinations */
-router.get("/destinations", isLoggedIn, (req, res, next) => {
+router.get("/destinations", (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
   const filters = {}
+  // req.params = {city : "Paris"}
 
   if (req.params.continent) {
     // le user a choisi un ou plusieurs continents
@@ -35,6 +27,11 @@ router.get("/destinations", isLoggedIn, (req, res, next) => {
     filters.temperature = {$in: req.params.temperature }
   }
 
+  if (req.params.city) {
+    // le user a choisi une ou plusieurs températures
+    filters.city = {$in: req.params.city }
+  }
+
 
   if (req.params.mood) {
     // le user a choisi une ou plusieurs activités
@@ -42,7 +39,7 @@ router.get("/destinations", isLoggedIn, (req, res, next) => {
   }
 
 console.log(filters)
-  Destination.find(filters)
+  Destination.find(filters) // filters = {}
   .then(myDestination => {
     console.log("destinations", myDestination)
     res.json({ destination: myDestination })
@@ -59,7 +56,7 @@ router.get("/resultats", isLoggedIn, (req, res, next) => {
   res.json("resultats");
   Destination.find(filters) 
   .then(myDestination => {
-     response.json("destinations", {myDestination})
+     res.json("destinations", {myDestination})
   })
 });
 
