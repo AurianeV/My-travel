@@ -148,6 +148,7 @@ router.put("/user", isLoggedIn, (req, res) => {
     image,
     birthdate,
     gender,
+    favoris : [],
       }, {new: true})
       .then((user) => {
         return res.json(user);

@@ -3,49 +3,43 @@ const authRoutes = require("./auth");
 const isLoggedOut = require("../middleware/isLoggedOut");
 const isLoggedIn = require("../middleware/isLoggedIn");
 const Destination = require("../models/destinations.model");
+const User = require("../models/User.model")
+const mongoose = require('mongoose')
 
-/* GET home page */
-router.get("/", (req, res, next) => {
-  res.json("PAGE D'ACCUEIL");
-});
-
-/* GET page idées destination */
-router.get("/ideas", (req, res, next) => {
-  res.json("PAGE LISTE DESTINATIONS");
-});
 
 /*GET recherche de destinations */
 router.get("/destinations", isLoggedIn, (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
   const filters = {}
+  console.log("test", req.query)
 
-  if (req.params.continent) {
+  if (req.query.continent) {
     // le user a choisi un ou plusieurs continents
-    filters.continent = {$in: req.params.continent }
+    filters.continent = {$in: req.query.continent }
   }
 
-  if (req.params.bestperiod) {
+  if (req.query.bestperiod) {
     // le user a choisi un ou plusieurs mois
-    filters.bestperiod = {$in: req.params.bestperiod } // 
+    filters.bestperiod = {$in: req.query.bestperiod } // 
 
   }
 
-  if (req.params.temperature) {
+  if (req.query.temperature) {
     // le user a choisi une ou plusieurs températures
-    filters.temperature = {$in: req.params.temperature }
+    filters.temperature = {$in: req.query.temperature }
   }
 
 
-  if (req.params.mood) {
+  if (req.query.mood) {
     // le user a choisi une ou plusieurs activités
-    filters.mood = {$in: req.params.mood}
+    filters.mood = {$in: req.query.mood}
   }
 
-console.log(filters)
+console.log("hello", filters)
   Destination.find(filters)
-  .then(myDestination => {
-    console.log("destinations", myDestination)
-    res.json({ destination: myDestination })
+  .then(myDestinations => {
+    console.log("destinations", myDestinations)
+    res.json({ destinations : myDestinations })
   })
   .catch(error => {
     console.log(error)
@@ -53,40 +47,31 @@ console.log(filters)
   })
 });
 
-/* GET Aperçu des destinations filtrées */ /*BUG*/
-
-router.get("/resultats", isLoggedIn, (req, res, next) => {
-  res.json("resultats");
-  Destination.find(filters) 
-  .then(myDestination => {
-     response.json("destinations", {myDestination})
-  })
-});
-
 /* GET Ville précise */
 
 router.get("/destinations/:id", isLoggedIn, (req, res, next) => {
   const id = req.params.id
-  res.json("ville");
   Destination.findById(id) 
   .then(myDestination => {
      res.json({destination: myDestination})
+  })
+  .catch(error => {
+    console.log(error)
+    res.status(500).json(error.message);
   })
 });
 
 /* PUT Éditer les champs des utilisateurs pour mettre en favoris *//*BUG*/
 
 router.put("/favoris", isLoggedIn, (req, res) => {
-  const { country, image, city} = req.params;
+  const { destination } = req.query.destination;
 
-  const cityid = req.session.city._id
-  Destination.findByIdAndUpdate({_id:cityid}, {
-    country: country,
-    image: image,
-    city: city,
+  const userid = req.session.user._id
+  User.findByIdAndUpdate({_id:userid}, {
+    $push: { favoris: mongoose.Types.ObjectId(destination) }
       }, {new: true})
-      .then((destinations) => {
-        return res.json(destinations);
+      .then((user) => {
+        return res.json(user);
       })
       .catch((err) => {
         return res.status(500).json({ errorMessage: err.message });
