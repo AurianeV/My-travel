@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import '../components/Homepage.css'
+import '../components/Homepage.css';
+import { Link } from 'react-router-dom';
+
+
 class Homepage extends Component{
 
 
@@ -7,7 +10,12 @@ class Homepage extends Component{
         return(
             <div>
                   <h1>Hello !</h1>
-              </div>
+            <button>
+                    <Link to='/countryfilter'>Recherche Destinations</Link>
+            </button>
+                  
+                  
+            </div>
           )
       }
   }

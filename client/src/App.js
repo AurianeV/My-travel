@@ -9,6 +9,7 @@ import User from './components/User';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import { Switch, Route } from 'react-router-dom';
+import Countryfilter from './components/Countryfilter';
 
 function App() {
   return (
@@ -23,10 +24,12 @@ function App() {
           <Route path='/user' component={User}/>
           <Route path='/signup' component={Signup}/>
           <Route path='/login' component={Login}/>
+          <Route path='/countryfilter' component={Countryfilter}/>
       </Switch>
+
       </header>
       
-      
+    
      
     </div>
   );
