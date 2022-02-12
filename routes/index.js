@@ -69,18 +69,27 @@ router.get("/destinations/:id", isLoggedIn, (req, res, next) => {
 /* PUT Éditer les champs des utilisateurs pour mettre en favoris *//*BUG*/
 
 router.put("/favoris", isLoggedIn, (req, res) => {
-  const { destination } = req.query.destination;
+  const destinationId  = req.query.destination;
 
   const userid = req.session.user._id
-  User.findByIdAndUpdate({_id:userid}, {
-    $push: { favoris: mongoose.Types.ObjectId(destination) }
-      }, {new: true})
-      .then((user) => {
-        return res.json(user);
-      })
-      .catch((err) => {
-        return res.status(500).json({ errorMessage: err.message });
-  });
+
+  User.findById(userid)
+    .then(user => {
+         /* if (found) {
+          return res.status(400).json({ errorMessage: "favoris already exists." }
+           
+          });
+         
+        }*/
+       
+      user.favoris.push(destinationId)// bonus: check qu'il existe pas deja / sinon: stop
+
+      user.save()
+        .then((userFromDB) => res.json(userFromDB))
+        .catch(err => {res.status(500).json({ errorMessage: err.message })})
+    })
+    .catch(err => res.status(500).json({error: err.message}))
+
 });
 
 
@@ -89,13 +98,13 @@ router.put("/favoris", isLoggedIn, (req, res) => {
 /* GET Destinations dans page favoris*/
 
 router.get('/favoris', isLoggedIn, (req, res, next) => {
-  const {image, city, country} = req.body;
-  const userid = req.session.user._id
   
-  User.findById({_id:userid})
+  const userid = req.session.user._id
+ 
+  User.findById(userid)
   .populate('favoris')
   .then((user) => {
-    res.json({"destinations": user.favoris})
+    res.json(user.favoris)
   })
   .catch(error => {
     return res.status(500).json({ errorMessage: error.message });
