@@ -2,9 +2,12 @@
   text-align: center;
 }
 
+/* Barre de navigation */
+
 .nav-style{
-  border-color: rgb(112, 96, 96);
+  background-color: rgb(194, 230, 255);
   display: flex;
+  justify-content: space-between;
 }
 .nav1 {
   display: flex;
@@ -12,13 +15,33 @@
 
 .nav2 {
   display:flex;
+  margin-right: 40px;
 }
 
+.nav2 > li {
+  border: solid 1px rgb(49, 49, 49);
+  border-radius: 5px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a{
+  color:black;
+}
 
 li {
   list-style-type:none;
-  padding-inline-start:15px;
-  
+  margin-left: 18px;
+  padding:5px;
+}
+
+/* Homepage */
+
+.backgroundpic {
+  width: 100%;
+  height:480px;
 }
 
 .App-logo {

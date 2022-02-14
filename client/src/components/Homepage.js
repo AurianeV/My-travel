@@ -8,14 +8,16 @@ class Homepage extends Component{
 
   render(){
         return(
-            <div>
-                  <h1>Hello !</h1>
+          <div>
+              
+            <img class="backgroundpic" src="/imageback.png"/>
+
             <button>
                     <Link to='/countryfilter'>Recherche Destinations</Link>
             </button>
                   
                   
-            </div>
+          </div>
           )
       }
   }
