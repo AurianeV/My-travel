@@ -10,12 +10,16 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import { Switch, Route } from 'react-router-dom';
 import Countryfilter from './components/Countryfilter';
+import Citypage from './components/Citypage';
+import Resultats from './components/Resultats';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       <header>
       <Navbar />
+      
 
       <Switch>
           <Route path='/homepage' component={Homepage}/>
@@ -25,10 +29,12 @@ function App() {
           <Route path='/signup' component={Signup}/>
           <Route path='/login' component={Login}/>
           <Route path='/countryfilter' component={Countryfilter}/>
+          <Route path='/citypage' component={Citypage}/>
+          <Route path='/resultats' component={Resultats}/>
       </Switch>
 
       </header>
-      
+      <Footer />
     
      
     </div>

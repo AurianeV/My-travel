@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
  
-const Destinations = () => {
+const Resultats = () => {
   return (
     <div>
-      <img class="countrypic" src="/client/src/paris(1).jpg"/>
+      <h1>Résultats de recherche</h1>
       <button>
         <Link to='/citypage'>La destination</Link>
       </button>
@@ -12,4 +12,4 @@ const Destinations = () => {
   )
 }
  
-export default Destinations;
+export default Resultats;
