@@ -1,44 +1,71 @@
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
- 
-const Signup = () => {
-  return (
-    <div>
-       <h1>Rejoignez nous !</h1>
-    <form action="/signup" method="POST">
-    <label for="input-firstname"></label>
-      <input
-        type="text"
-        id="input-firstname"
-        name="firstname"
-        placeholder="First name"
-      />
-      <label for="input-lastname"></label>
-      <input
-        type="text"
-        id="input-lastname"
-        name="lastname"
-        placeholder="Last name"
-      />
-      <label for="input-email"></label>
-      <input
-        type="text"
-        id="input-email"
-        name="email"
-        placeholder="example@gmail.com"
-      />
+import authentification from '../services/authentification';
+import { Link } from 'react-router-dom';
 
-      <label for="input-password"></label>
-      <input
-        type="password"
-        name="password"
-        id="input-password"
-        placeholder="********"
-      />
-      <button type="submit">Enregistrer</button>
-    </form>
-    </div>
-  )
-}
- 
+class Signup extends Component {
+  state = { firstname: "", lastname: "", email: "", password: "" }
+
+  handleFormSubmit = (event) => {
+    event.preventDefault();
+    const firstname = this.state.firstname;
+    const lastname = this.state.lastname;
+    const email = this.state.email;
+    const password = this.state.password;
+
+    authentification.signup(firstname, lastname, email, password)
+      .then(response => {
+        this.setState({ firstname: "", lastname: "", email: "", password: "" });
+        /*redirect vers userprofile*/
+        console.log(this.props)
+        console.log(response)
+        this.props.updateUser(response)
+        this.props.history.push('/user')
+      })
+      .catch(error => console.log(error))
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Rejoignez nous !</h1>
+        <form onSubmit={this.handleFormSubmit} action="/signup" method="POST">
+          <label for="input-firstname"></label>
+          <input
+            type="text"
+            name="firstname" value={this.state.firstname} onChange={e => this.handleChange(e)}
+            placeholder="First name"
+          />
+          <label for="input-lastname"></label>
+          <input
+            type="text" name="lastname" value={this.state.lastname} onChange={e => this.handleChange(e)}
+            placeholder="Last name"
+          />
+          <label for="input-email"></label>
+          <input
+            type="text" name="email" value={this.state.email} onChange={e => this.handleChange(e)}
+            placeholder="example@gmail.com"
+          />
+
+          <label for="input-password"></label>
+          <input
+            type="text" name="password" value={this.state.password} onChange={e => this.handleChange(e)}
+            placeholder="********"
+          />
+          <button class="btn" onClick={this.handleFormSubmit} type="submit">Enregistrer</button>
+        </form>
+        <p>Already have an account?
+          <button>
+            <Link to={"/login"}>Login</Link>
+          </button>
+        </p>
+      </div>
+    )
+  }
+};
+
 export default Signup;

@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
@@ -13,8 +13,37 @@ import Countryfilter from './components/Countryfilter';
 import Citypage from './components/Citypage';
 import Resultats from './components/Resultats';
 import Footer from './components/Footer';
+import authentification from './services/authentification';
 
-function App() {
+
+// 1. redirect
+// 2. state user
+// 3. /desitiinations/:id
+
+class App extends Component {
+
+  state = {
+    user: null
+  }
+
+  fetchUser = () => {
+    if (!this.state.user._id) {
+      authentification.loggedin()
+        .then(data => this.setState({user: data}))
+        .catch(err => this.setState({user: false}))
+      ;
+    } else {
+      console.log('user already in the state')
+    }
+  };
+
+  updateUser = (data) => {
+    this.setState({user: data});
+  };
+
+  // state user (transformer en class-component)
+  render(){
+    console.log(this.state.user)
   return (
     <div className="App">
       <header>
@@ -23,10 +52,10 @@ function App() {
 
       <Switch>
           <Route path='/homepage' component={Homepage}/>
-          <Route path='/destinations' component={Destinations}/>
+          <Route path='/destinations' component={Destinations}/> {/* a l'interieur de Desintinatino this.props.match.params.id */}
           <Route path='/favoris' component={Favoris}/>
-          <Route path='/user' component={User}/>
-          <Route path='/signup' component={Signup}/>
+          <Route path='/user' render={(props) => <User userInSession = {this.state.user}/>}/>
+          <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={props.updateUser} />}/>
           <Route path='/login' component={Login}/>
           <Route path='/countryfilter' component={Countryfilter}/>
           <Route path='/citypage' component={Citypage}/>
@@ -39,6 +68,7 @@ function App() {
      
     </div>
   );
+ }
 }
 
 export default App;
