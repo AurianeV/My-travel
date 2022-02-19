@@ -15,8 +15,14 @@ const isLoggedOut = require("../middleware/isLoggedOut");
 const isLoggedIn = require("../middleware/isLoggedIn");
 
 router.get("/loggedin", (req, res) => {
-  res.json(req.user);
-});
+  console.log("req", req)
+  if(req.user){
+    console.log("inside if ", req.user)
+    res.json(req.user);
+    return;
+  }
+  res.status(403).json({errorMessage: "Not authorized!"})
+  });
 
 
 //INSCRIPTION 

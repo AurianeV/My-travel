@@ -21,16 +21,18 @@ import authentification from './services/authentification';
 
 class App extends Component {
 
-  state = {
-    user: {}
-   
-  }
+
+state = { user: null } 
 
 
   fetchUser = () => {
-    if (!this.state.user._id) {
+    console.log("fetch user", this.state)
+    if (!this.state.user) {
       authentification.loggedin()
-        .then(data => this.setState({user: data}))
+        .then(data => {
+          console.log("user auth data", data)
+          this.setState({user: data})
+        })
         .catch(err => this.setState({user: false}))
       ;
     } else {
@@ -42,6 +44,10 @@ class App extends Component {
   updateUser = (data) => {
     this.setState({user: data});
   };
+
+  componentDidMount() {
+    this.fetchUser();
+  }
 
   // state user (transformer en class-component)
   render(){
@@ -57,7 +63,7 @@ class App extends Component {
           <Route path='/destinations' component={Destinations}/> {/* a l'interieur de Desintinatino this.props.match.params.id */}
           <Route path='/favoris' component={Favoris}/>
           <Route path='/user' render={(props) => <User userInSession = {this.state.user}/>}/>
-          <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={props.updateUser} />}/>
+          <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>
           <Route path='/login' component={Login}/>
           <Route path='/countryfilter' component={Countryfilter}/>
           <Route path='/citypage' component={Citypage}/>
