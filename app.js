@@ -23,6 +23,13 @@ app.use("/", indexRoutes);
 const authRoutes = require('./routes/auth')
 app.use("/api", authRoutes);
 
+app.use(express.static('client/build'));
+
+app.use((req, res, next) => {
+    res.sendFile(`${__dirname}/client/build/index.html`, err => {
+      if (err) next(err)
+    })
+  });
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 
