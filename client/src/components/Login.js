@@ -16,6 +16,7 @@ class Login extends Component {
       .then(response => {
           this.setState({ email: "", password: "" });
           this.props.updateUser(response)
+          this.props.history.push('/user')
       })
       .catch( error => console.log(error) )
   }
