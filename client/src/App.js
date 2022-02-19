@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -23,8 +22,10 @@ import authentification from './services/authentification';
 class App extends Component {
 
   state = {
-    user: null
+    user: {}
+   
   }
+
 
   fetchUser = () => {
     if (!this.state.user._id) {
@@ -37,6 +38,7 @@ class App extends Component {
     }
   };
 
+ 
   updateUser = (data) => {
     this.setState({user: data});
   };

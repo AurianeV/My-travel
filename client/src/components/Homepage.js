@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../components/Homepage.css';
 import { Link } from 'react-router-dom';
 
 
