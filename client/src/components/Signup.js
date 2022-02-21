@@ -32,28 +32,28 @@ class Signup extends Component {
 
   render() {
     return (
-      <div>
+      <div class="signupdiv">
         <h1>Rejoignez nous !</h1>
-        <form onSubmit={this.handleFormSubmit} action="/signup" method="POST">
+        <form class="signupform" onSubmit={this.handleFormSubmit} action="/signup" method="POST">
           <label for="input-firstname"></label>
-          <input
+          <input class="lab"
             type="text"
             name="firstname" value={this.state.firstname} onChange={e => this.handleChange(e)}
             placeholder="First name"
           />
           <label for="input-lastname"></label>
-          <input
+          <input class="lab"
             type="text" name="lastname" value={this.state.lastname} onChange={e => this.handleChange(e)}
             placeholder="Last name"
           />
           <label for="input-email"></label>
-          <input
+          <input class="lab"
             type="text" name="email" value={this.state.email} onChange={e => this.handleChange(e)}
             placeholder="example@gmail.com"
           />
 
-          <label for="input-password"></label>
-          <input
+          <label  for="input-password"></label>
+          <input class="lab"
             type="text" name="password" value={this.state.password} onChange={e => this.handleChange(e)}
             placeholder="********"
           />

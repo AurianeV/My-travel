@@ -5,6 +5,7 @@ const navbar = () => {
   return (
     <nav className="nav-style">
         <ul class="nav1">
+          <li ><Link class="my" to='/homepage'>My Travel</Link></li>
           <li><Link to='/homepage'>Home</Link></li>
           <li><Link to='/destinations'> Idées de Destinations </Link></li>
           <li><Link to='/favoris'> Mes Destinations </Link></li>

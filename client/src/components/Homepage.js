@@ -15,7 +15,7 @@ class Homepage extends Component{
                     <Link to='/countryfilter'>Recherche Destinations</Link>
             </button>
             <h1>Quelques idées ...</h1>
-            <section>
+          <section>
             <div class="divhome">
               <section>
               <img class="divhomeimg"src="https://images.unsplash.com/photo-1519049069275-dea996e1a314?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHNraXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"/>

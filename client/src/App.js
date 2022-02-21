@@ -70,9 +70,10 @@ state = { user: null }
           <Route path='/resultats' component={Resultats}/>
       </Switch>
 
+
       </header>
+
       <Footer />
-    
      
     </div>
   );
