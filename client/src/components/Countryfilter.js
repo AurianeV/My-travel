@@ -53,7 +53,7 @@ const Countryfilter = () => {
       <label for="randonnée">Randonnée</label>
     </div>
 
-    <button><Link to='/resultas'>Go !</Link></button>
+    <button><Link to='/resultats'>Go !</Link></button>
 
       {islogged ? ("") : (
       <div>

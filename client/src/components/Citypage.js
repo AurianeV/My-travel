@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
  
 const Citypage = () => {
   const islogged = false
-
+//Use componentDidMount
   return (
     <div>
       <h1>Page d'une destination</h1>

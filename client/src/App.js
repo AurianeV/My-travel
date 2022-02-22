@@ -63,7 +63,7 @@ state = { user: null }
           <Route path='/homepage' component={Homepage}/>
           <Route path='/destinations' component={Destinations}/> {/* a l'interieur de Desintinatino this.props.match.params.id */}
           <Route path='/favoris' component={Favoris}/>
-          <Route path='/user' render={(props) => <User userInSession = {this.state.user}/>}/>
+          <Route path='/user' render={(props) => <User userInSession = {this.state.user} history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>
           <Route path='/login' render={(props) => <Login history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/countryfilter' component={Countryfilter}/>

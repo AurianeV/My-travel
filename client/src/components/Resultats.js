@@ -5,6 +5,7 @@ const Resultats = () => {
   return (
     <div>
       <h1>Résultats de recherche</h1>
+      <h1>Brésil</h1>
     </div>
   )
 }
