@@ -54,7 +54,7 @@ class Signup extends Component {
 
           <label  for="input-password"></label>
           <input class="lab"
-            type="text" name="password" value={this.state.password} onChange={e => this.handleChange(e)}
+            type="password" name="password" value={this.state.password} onChange={e => this.handleChange(e)}
             placeholder="********"
           />
           <button class="btn" onClick={this.handleFormSubmit} type="submit">Enregistrer</button>
