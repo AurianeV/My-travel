@@ -7,14 +7,14 @@ class User extends Component {
   return (
     <div>
       <h1>Mon Compte</h1>
-      <p>{this.props.userInSession.firstname}</p>
-      <p>{this.props.userInSession.lastname}</p>
-      
-     
-      <div>
-        <p>Merci de vous login!</p>
-        <Link to="/login">Login</Link>
-      </div>
+      <p>Firstname:{this.props.userInSession.firstname}</p>
+      <p>Lastname:{this.props.userInSession.lastname}</p>
+      <p>Birthdate:</p>
+      <p>Age:</p>
+      <p>Gender:</p>
+      <p>My Favorites:</p>
+      <button><Link to='/edit'>Edit profile</Link></button>
+      <button>Logout</button>
     </div>
   )};
 }

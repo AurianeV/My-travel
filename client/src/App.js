@@ -13,6 +13,7 @@ import Citypage from './components/Citypage';
 import Resultats from './components/Resultats';
 import Footer from './components/Footer';
 import authentification from './services/authentification';
+import Edit from './components/Edit';
 
 
 // 1. redirect
@@ -68,6 +69,7 @@ state = { user: null }
           <Route path='/countryfilter' component={Countryfilter}/>
           <Route path='/citypage' component={Citypage}/>
           <Route path='/resultats' component={Resultats}/>
+          <Route path='/edit' component={Edit}/>
       </Switch>
 
 

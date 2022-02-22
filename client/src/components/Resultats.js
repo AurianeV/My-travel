@@ -5,9 +5,6 @@ const Resultats = () => {
   return (
     <div>
       <h1>Résultats de recherche</h1>
-      <button>
-        <Link to='/citypage'>La destination</Link>
-      </button>
     </div>
   )
 }
