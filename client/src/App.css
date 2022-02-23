@@ -146,7 +146,7 @@ li {
   }
 }
 
-.divhome{
+.divhome, .divhome2{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -154,13 +154,16 @@ li {
   padding:20px;
   padding-left: 50px;
   padding-right: 50px;
-  border: dashed 0.3px rgb(145, 145, 145);
 }
 
 .divhomeimg{
   width: 500px;
   height: 500px;
   border-radius: 50% 20% / 10% 40%;
+}
+
+.divhome2 {
+  background: rgb(239, 249, 255);
 }
 
 h2{

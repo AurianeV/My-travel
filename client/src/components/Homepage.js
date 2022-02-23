@@ -28,7 +28,7 @@ class Homepage extends Component{
                 </button>
               </section>
             </div>
-            <div class="divhome">
+            <div class="divhome2">
               <section>
                 <h2>Profiter des belles plages</h2>
                 <p>Lézarder au soleil sur le sable et être bercé par le doux bruit des vagues ! Le soleil, la baignade, du sable à perte de vue, des farnientes et des jeux aquatiques divers, voilà le résumé des vacances à la plage.</p>
