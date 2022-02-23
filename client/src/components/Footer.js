@@ -5,14 +5,11 @@ const Footer = () => {
   return (
     <footer>
       <ul>
-         <li><Link to='/destinations'> Idées de Destinations </Link></li>
-          <li><Link to='/favoris'> Mes Destinations </Link></li>
-          <li><Link to='/user'> Mon Compte </Link></li>
+      <li><img class="insta"  src="/insta.png" href=""  /></li>
+          <li> <img class="facebook"  src="/facebook.png" href=""  /> </li>
+          <li><img class="twitter"  src="/twiter.png" href=""  /></li>
+          <li><img class="mail"  src="/mail.png" href=""  /></li>
         </ul>
-      <div>
-      <a href="http://twitter.com/share" class="twitter-share-button" 
-      data-count="vertical" data-via="InfoWebMaster">Tweeter  </a>
-      </div>
     </footer>
   )
 }

@@ -19,20 +19,31 @@ body{
   align-items: center;
   height: 100px;
 }
+
+.myaccount, .mydestinations , .destinationideas {
+  width:170px;
+}
+
 .nav1 {
   display: flex;
+  font: italic small-caps 16px/2 cursive;
 }
 
 .nav2 {
   display:flex;
   margin-right: 40px;
+  font-weight: bold;
+  margin-top:7px;
+  
 }
 
 .nav2 > li {
-  border: solid 3px rgb(250, 34, 34);
-  border-radius: 100px;
-  padding: 10px;
-
+  border: solid 3px rgb(50, 107, 134);
+  border-radius: 10px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 ul{
@@ -53,7 +64,7 @@ a:link {
 }
 
 a{
-  color: black;
+  color:rgb(50, 107, 134);
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
 }
@@ -73,13 +84,37 @@ li {
 
 .backgroundpic {
   width: 100%;
-  height:500px;
+  height:450px;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search_dest  {
+    font-weight: bold;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(217, 237, 239, 0.753);
+    border-radius: 10px;
+    background-color: rgba(217, 237, 239, 0.753);
+    background-image: linear-gradient(to top left,        
+                          rgba(50, 107, 134, 0.836));
+    box-shadow: inset 2px 2px 3px rgba(50, 107, 134, 0.74),
+                inset -2px -2px 3px rgba(50, 107, 134, 0.61);
+    margin-bottom: 40px;
 }
+
+.search_dest:hover {
+    background-color: rgba(255, 255, 255, 0.979);
+}
+
+.search_dest:active {
+    box-shadow: inset -2px -2px 3px rgb(255, 255, 255),
+                inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -116,23 +151,60 @@ li {
   align-items: center;
   justify-content: space-evenly;
   font-size: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding:20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: dashed 0.3px rgb(145, 145, 145);
 }
 
 .divhomeimg{
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50% 20% / 10% 40%;
 }
 
 h2{
-  font-size: 70px;
-  font-family: 'Nunito', sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 40px;
+  font-family: Georgia, serif;
+  color:rgb(112, 112, 112);
 }
 
 p{
-  font-size: 40px;
-  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: system-ui;
+  color:rgb(70, 70, 70);
+  margin-bottom: 0px;
+}
+
+.register {
+  font-weight: bold;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(217, 237, 239, 0.753);
+  border-radius: 10px;
+  background-color: rgba(217, 237, 239, 0.753);
+  background-image: linear-gradient(to top left,        
+                        rgba(50, 107, 134, 0.836));
+  box-shadow: inset 2px 2px 3px rgba(50, 107, 134, 0.74),
+              inset -2px -2px 3px rgba(50, 107, 134, 0.61);
+  margin-bottom: 40px;
+}
+
+.register:hover {
+  background-color: rgba(255, 255, 255, 0.979);
+}
+
+.register:active {
+  box-shadow: inset -2px -2px 3px rgb(255, 255, 255),
+              inset 2px 2px 3px rgba(255, 255, 255, 0.6);
 }
 
 /* Destinations Page */
@@ -184,4 +256,10 @@ font-family: 'Nunito', sans-serif;
   font-size: 20px;
   margin-top: 10px;
   padding: 10px;
+}
+
+/* FOOTER */
+
+.insta, .facebook, .twitter, .mail {
+  width:80px;
 }
