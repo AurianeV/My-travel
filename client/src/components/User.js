@@ -16,17 +16,19 @@ class User extends Component {
   render(){
   return (
     <div>
-      <h1>Mon Compte</h1>
-      <p>Firstname:{this.props.userInSession.firstname}</p>
-      <p>Lastname:{this.props.userInSession.lastname}</p>
+      <h1>{this.props.userInSession.firstname} {this.props.userInSession.lastname}</h1>
+      <div class="account">
       <p>Birthdate:</p>
       <p>Age:</p>
       <p>Gender:</p>
       <p>My Favorites:</p>
-      <button><Link to='/edit'>Edit profile</Link></button>
+      </div>
+      <button class="btnlogin"><Link to='/edit'>Edit profile</Link></button>
+      <div>
       {//this.state.userInSession && 
-      <button onClick={this.onLogout}>Logout</button>
+      <button class="btnlogin" onClick={this.onLogout}>Logout</button>
       }
+      </div>
     </div>
   )};
 }

@@ -413,6 +413,63 @@ h1 {
   background-color: rgba(255, 255, 255, 0.979);
 }
 
+/* COUNTRY FILTER */
+
+.divp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input:checked + label {
+  font-weight: bold;
+  color:rgb(50, 107, 134);
+}
+
+input{
+  margin-right: 10px;
+}
+
+
+input[type="checkbox"]{
+  box-shadow: 0 0 0 3px rgb(50, 107, 134);
+}
+
+#inputdiv{
+  background-color: rgba(217, 237, 239);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputdiv2{
+  background-color: rgba(217, 237, 239);
+  padding: 10px;
+  width: 50%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+div > input{
+  align-items: center;
+}
+
+#field{
+  margin-bottom: 5px;
+}
+
+/* USER ACCOUNT*/
+
+.account{
+  background-color: rgba(217, 237, 239);
+  padding: 10px;
+}
 
 /* FOOTER */
 
