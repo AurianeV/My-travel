@@ -237,10 +237,27 @@ font-family: 'Nunito', sans-serif;
 
 /* SIGNUP*/
 
+h1 {
+  font-size: 40px;
+  color:rgb(90, 90, 90);
+}
+
+.travelpic {
+  width:350px;
+  border-radius: 45% 20%;
+}
+
+.signupgeneral {
+  display:flex;
+  justify-content: center;
+  background-color: rgba(217, 237, 239);
+}
+
 .signupdiv{
   display: flex;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .signupform{
@@ -251,12 +268,62 @@ font-family: 'Nunito', sans-serif;
 }
 
 .lab{
-  border: 3px solid ;
-  border-radius: 100px;
+  border: 3px solid rgb(50, 107, 134);
+  border-radius: 10px;
   font-size: 20px;
   margin-top: 10px;
   padding: 10px;
 }
+
+.btnregister {
+  margin-top: 35px;
+  font-weight: bold;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: rgba(50, 107, 134);
+  text-shadow: 1px 1px 1px rgba(217, 237, 239, 0.753);
+  border-radius: 10px;
+  background-color: rgba(217, 237, 239, 0.753);
+  background-image: linear-gradient(to top left,        
+                        rgba(50, 107, 134, 0.836));
+  box-shadow: inset 2px 2px 3px rgba(50, 107, 134, 0.74),
+              inset -2px -2px 3px rgba(50, 107, 134, 0.61);
+  margin-bottom: 40px;
+  cursor:pointer;
+}
+
+.btnregister:hover {
+  background-color: rgba(255, 255, 255, 0.979);
+}
+
+.btnregister:active {
+  box-shadow: inset -2px -2px 3px rgb(255, 255, 255),
+              inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+}
+
+
+
+.alreadylogin {
+  border-radius: 10px;
+  border:0; 
+  margin-left: 5px;
+  box-shadow: inset 2px 2px 3px rgba(50, 107, 134, 0.74),
+              inset -2px -2px 3px rgba(50, 107, 134, 0.61);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: rgb(217, 236, 238);
+
+}
+
+.alreadylogin:hover {
+  background-color: rgba(255, 255, 255, 0.979);
+}
+
 
 /* FOOTER */
 

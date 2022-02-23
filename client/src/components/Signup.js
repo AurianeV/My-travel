@@ -32,8 +32,12 @@ class Signup extends Component {
 
   render() {
     return (
+      <div class="signupgeneral">
+        <div>
+          <img class="travelpic" src="/pictravel2.png"/>
+        </div>
       <div class="signupdiv">
-        <h1>Rejoignez nous !</h1>
+        <h1>Join us !</h1>
         <form class="signupform" onSubmit={this.handleFormSubmit} action="/signup" method="POST">
           <label for="input-firstname"></label>
           <input class="lab"
@@ -57,13 +61,14 @@ class Signup extends Component {
             type="password" name="password" value={this.state.password} onChange={e => this.handleChange(e)}
             placeholder="********"
           />
-          <button class="btn" onClick={this.handleFormSubmit} type="submit">Enregistrer</button>
+          <button class="btnregister" onClick={this.handleFormSubmit} type="submit">Registration</button>
         </form>
         <p>Already have an account?
-          <button>
+          <button class="alreadylogin">
             <Link to={"/login"}>Login</Link>
           </button>
         </p>
+      </div>
       </div>
     )
   }
