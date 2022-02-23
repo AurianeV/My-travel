@@ -28,12 +28,16 @@ class Login extends Component {
 
   render(){
   return (
+    <div class="logingeneral">
+        <div>
+          <img class="travelpic" src="/pictravel3.png"/>
+        </div>
+    <div class="logindiv">
+    <h1 class="h1login">Prêt à découvrir le monde ?</h1>
     <div>
-    <h1>Prêt à découvrir le monde !</h1>
-    <div>
-      <form onSubmit={this.handleFormSubmit}>
+      <form class="loginform" onSubmit={this.handleFormSubmit}>
       <label for="input-email"></label>
-      <input
+      <input class="lab"
         type="text"
         id="input-email"
         name="email"
@@ -41,21 +45,21 @@ class Login extends Component {
         value={this.state.email} onChange={e => this.handleChange(e)}
       />
       <label  for="input-password"></label>
-      <input
+      <input class="lab"
         type="password"
         name="password"
         id="input-password"
         placeholder="********"
         value={this.state.password} onChange={e => this.handleChange(e)}
       />
-        <button type="submit">Login</button>
+        <button class="btnlogin" type="submit">Login</button>
     </form>
     <p>Don't have account? 
-          <Link to={"/signup"}>Register</Link>
+         <button class="notcount"> <Link to={"/signup"}>Register</Link> </button>
     </p>
     </div>
   </div>
-   
+   </div>
   )
 }}
  
