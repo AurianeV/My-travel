@@ -61,7 +61,7 @@ state = { user: null }
 
       <Switch>
           <Route path='/homepage' component={Homepage}/>
-          <Route path='/destinations' component={Destinations}/> {/* a l'interieur de Desintinatino this.props.match.params.id */}
+          <Route path='/destinations' component={Destinations}/>
           <Route path='/favoris' component={Favoris}/>
           <Route path='/user' render={(props) => <User userInSession = {this.state.user} history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>

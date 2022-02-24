@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <ul>
       <li><img class="insta"  src="/insta.png" href=""  /></li>
-          <li> <img class="facebook"  src="/facebook.png" href=""  /> </li>
+          <li><img onClickclass="facebook"  src="/facebook.png" href=""  /></li>
           <li><img class="twitter"  src="/twiter.png" href=""  /></li>
           <li><img class="mail"  src="/mail.png" href=""  /></li>
         </ul>
