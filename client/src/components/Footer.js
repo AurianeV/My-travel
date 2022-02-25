@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer>
       <ul>
-      <li><img class="insta"  src="/insta.png" href=""  /></li>
-          <li><img onClickclass="facebook"  src="/facebook.png" href=""  /></li>
-          <li><img class="twitter"  src="/twiter.png" href=""  /></li>
-          <li><img class="mail"  src="/mail.png" href=""  /></li>
+          <li><a href="https://www.instagram.com/?hl=fr"><img class="insta"  src="/insta.png"/></a></li>
+          <li><a href="https://fr-fr.facebook.com/"><img class="facebook"  src="/facebook.png"/></a></li>
+          <li><a href="https://twitter.com/?lang=fr"><img class="twitter"  src="/twiter.png"/></a></li>
+          <li><a href="https://www.google.com/intl/fr/gmail/about/policy/"><img class="mail"  src="/mail.png"/></a></li>
         </ul>
     </footer>
   )
