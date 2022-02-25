@@ -15,7 +15,7 @@ class User extends Component {
   }
   render(){
   return (
-    <div>
+    <div class="align">
       <h1>{this.props.userInSession.firstname} {this.props.userInSession.lastname}</h1>
       <div class="account">
       <p>Birthdate:</p>

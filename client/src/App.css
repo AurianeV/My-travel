@@ -429,6 +429,8 @@ input:checked + label {
 
 input{
   margin-right: 10px;
+  display: inline-block;
+
 }
 
 
@@ -440,10 +442,11 @@ input[type="checkbox"]{
   background-color: rgba(217, 237, 239);
   padding: 10px;
   width: 50%;
-  border-radius: 20px;
+  border-radius: 20px; 
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .inputdiv2{
@@ -456,19 +459,26 @@ input[type="checkbox"]{
 }
 
 
-div > input{
-  align-items: center;
-}
-
 #field{
   margin-bottom: 5px;
+  display: flex;
 }
 
 /* USER ACCOUNT*/
 
+.align{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .account{
   background-color: rgba(217, 237, 239);
-  padding: 10px;
+  border-radius: 20px;
+  width: 30%;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 /* FOOTER */

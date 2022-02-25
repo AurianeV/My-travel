@@ -8,7 +8,7 @@ class Edit extends Component {
   return (
     <div>
       <h1>Edit Mon Compte</h1>
-      <p></p>
+      
     </div>
   )};
 }
