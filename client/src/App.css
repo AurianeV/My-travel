@@ -429,8 +429,6 @@ input:checked + label {
 
 input{
   margin-right: 10px;
-  display: inline-block;
-
 }
 
 
@@ -438,29 +436,46 @@ input[type="checkbox"]{
   box-shadow: 0 0 0 3px rgb(50, 107, 134);
 }
 
-#inputdiv{
-  background-color: rgba(217, 237, 239);
-  padding: 10px;
-  width: 50%;
-  border-radius: 20px; 
+.test{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+}
+
+#inputdiv{
+  background-color: rgba(217, 237, 239);
+  padding: 10px;
+  width: 600px;
+  border-radius: 20px; 
+  display: flex;
+  justify-content: center;
+}
+
+label{
+  display: flex;
+  justify-content:flex-start;
+  margin-bottom: 5px;
+}
+
+h3{
+ font-family:fantasy sans-serif;
+  color:orangered;
 }
 
 .inputdiv2{
   background-color: rgba(217, 237, 239);
   padding: 10px;
-  width: 50%;
+  width: 600px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
 }
 
 
+
 #field{
   margin-bottom: 5px;
+  margin-right: 10px;
   display: flex;
 }
 

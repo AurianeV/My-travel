@@ -24,6 +24,30 @@ class Countryfilter extends Component {
       }
     })
     console.log('continents=', continents)
+
+    const periode = []
+    event.target.bestperiod.forEach(el => {
+      if (el.checked) {
+        periode.push(el.value)
+      }
+    })
+    console.log('periode=', periode)
+
+    const temperatures = []
+    event.target.temperature.forEach(el => {
+      if (el.checked) {
+        temperatures.push(el.value)
+      }
+    })
+    console.log('temperatures=', temperatures)
+
+    const moods = []
+    event.target.mood.forEach(el => {
+      if (el.checked) {
+        moods.push(el.value)
+      }
+    })
+    console.log('moods=', moods)
      // faire const aussi pour les autres champs
 
     // const continent = this.state.continent;
@@ -50,142 +74,170 @@ class Countryfilter extends Component {
 
   render(){
   return (
-    <div class="divp">
-      <form onSubmit={this.handleFormSubmit}> 
-        <h1>Continents to Explore</h1>
+    <div >
+      
+      <h1>Looking for <img class="logo"  src="/MY Travel (200 × 200 px).png" /></h1>
+      <form class="divp" onSubmit={this.handleFormSubmit}> 
+        <h3>Continents to Explore</h3>
 
         <section id="inputdiv">
-          <div id="field">
-            <input type="checkbox" value="afrique" name="continent"   />
-            <label for="scales">Africa</label>
-          </div>
-          <div id="field">
+          <div class="test">
+            <label>
+              <input type="checkbox" value="africa" name="continent"/>  
+              Africa
+            </label>
             <label>
               <input type="checkbox" value="europe" name="continent"  />
               Europe
             </label>
-          </div>
-          <div id="field">
-            <input type="checkbox" value="asie" name="continent" />
-            <label for="asie">Asia</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" value="océanie" name="continent" />
-            <label for="océanie">Oceania</label>
-          </div>
-          <div id="field">
+            <label>
+            <input type="checkbox" value="asia" name="continent" />
+              Asia
+            </label>
+            <label>
+            <input type="checkbox" value="oceania" name="continent" />
+              Oceania
+            </label>
+            <label>
             <input type="checkbox" value="ameriequen" name="continent" />
-            <label for="ameriquen">North America</label>
-          </div>
-          <div id="field">
+              North America</label>
+            <label>
             <input type="checkbox" value="ameriques" name="continent" />
-            <label for="ameriques">South America</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" value="antarctique" name="continent" />
-            <label for="antarctique">Antarctic</label>
+              South America</label>
+            <label>
+            <input type="checkbox" value="antarctic" name="continent" />
+              Antarctic
+            </label>
           </div>
         </section>
 
-        <h1>When I want to leave</h1>
+        <h3>When I want to leave</h3>
         <section class="inputdiv2" >
           <div>
             <div id="field">
-              <input type="checkbox" id="janvier" name="janvier"  />
-              <label for="janvier">January</label>
+              <label>
+              <input type="checkbox" value="january" name="bestperiod"  />
+                January
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="février" name="févier" />
-              <label for="février">February</label>
+              <label>
+              <input type="checkbox" value="february" name="bestperiod"  />
+                February
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="mars" name="mars" />
-              <label for="mars">March</label>
+              <label>
+              <input type="checkbox" value="march" name="bestperiod"  />
+                March
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="april" name="april" />
-              <label for="april">April</label>
+              <label>
+              <input type="checkbox" value="march" name="bestperiod"  />
+                April
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="may" name="may" />
-              <label for="may">May</label>
+              <label>
+              <input type="checkbox" value="may" name="bestperiod"  />
+                May
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="june" name="june" />
-              <label for="june">June</label>
+              <label>
+              <input type="checkbox" value="june" name="bestperiod"  />
+                June
+              </label>
             </div>
           </div>
           <div>
             <div id="field">
-              <input type="checkbox" id="july" name="july" />
-              <label for="july">July</label>
+              <label>
+              <input type="checkbox" value="july" name="bestperiod"  />
+              July
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="august" name="august" />
-              <label for="august">August</label>
+              <label>
+              <input type="checkbox" value="august" name="bestperiod"  />
+                August
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="september" name="september" />
-              <label for="september">September</label>
+              <label>
+              <input type="checkbox" value="september" name="bestperiod"  />
+                September
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="october" name="october" />
-              <label for="october">October</label>
+              <label>
+              <input type="checkbox" value="october" name="bestperiod"  />
+                October
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="november" name="november" />
-              <label for="november">November</label>
+              <label>
+              <input type="checkbox" value="november" name="bestperiod"  />  
+                November
+              </label>
             </div>
             <div id="field">
-              <input type="checkbox" id="december" name="december" />
-              <label for="december">December</label>
+              <label>
+              <input type="checkbox" value="december" name="bestperiod"  /> 
+                December
+              </label>
             </div>
           </div>
         </section>
 
-        <h1>Temperatures</h1>
+        <h3>Temperatures</h3>
 
         <section id="inputdiv">
-          <div id="field">
-            <input type="checkbox" id="degré" name="degré" />
-            <label for="degré">-10°C to 0°C</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="degré" name="degré" />
-            <label for="degré">1°C to 10°C</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="degré" name="degré" />
-            <label for="degré">11°C to 20°C</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="degré" name="degré" />
-            <label for="degré">21°C to 30°C</label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="degré" name="degré" />
-            <label for="degré">31°C to 40°C</label>
+          <div >
+            <label>
+            <input type="checkbox" value="" name="temperature"  />
+              -10°C to 0°C
+            </label>
+            <label>
+            <input type="checkbox" value="" name="temperature"  />
+              1°C to 10°C
+            </label>
+            <label>
+            <input type="checkbox" value="" name="temperature"  />
+              11°C to 20°C
+            </label>
+            <label>
+            <input type="checkbox" value="" name="temperature"  />
+              21°C to 30°C
+            </label>
+            <label>
+            <input type="checkbox" value="" name="temperatures"  /> 
+              31°C to 40°C
+            </label>
           </div>
         </section>
 
-        <h1>My Mood</h1>
+        <h3>My Mood</h3>
 
         <section id="inputdiv">
-          <div id="field">
-            <input type="checkbox" id="randonnée" name="randonnée" />
-            <label for="randonnée">Hiking <img src="" /></label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="ski" name="ski" />
-            <label for="ski">Ski <img src="" /></label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="beach" name="beach" />
-            <label for="beach">Beach <img src="" /></label>
-          </div>
-          <div id="field">
-            <input type="checkbox" id="visit" name="visit"  />
-            <label for="visit">Visit <img src="" /></label>
+          <div >
+            <label>
+            <input type="checkbox" value="hiking" name="mood"  /> 
+              Hiking <img src="" />
+            </label>
+            <label>
+            <input type="checkbox" value="ski" name="mood"  /> 
+              Ski <img src="" />
+            </label>
+            <label>
+            <input type="checkbox" value="beach" name="mood"  /> 
+              Beach <img src="" />
+            </label>
+            <label>
+            <input type="checkbox" value="visit" name="mood"  /> 
+              Visit <img src="" />
+            </label>
           </div>
         </section>
         <button class="btnlogin">Go !</button>
