@@ -5,11 +5,22 @@ export default {
     withCredentials: true
   }),
   getDestinations() {
-    return this.service.get('/destinations')
+
+    // const myquerystring = querystring.stringify({
+    //   continent: continents,
+    //   // ....
+    // })
+
+    let qs = ""
+    if (myquerystring) {
+      qs = `?${myquerystring}`
+    }
+
+    return this.service.get(`/destinations${qs}`)
       .then(response => response.data)
   },
   getDestinationDetails(id) {
     return this.service.get(`/destinations/${id}`)
       .then(response => response.data)
-  }
+  },
 }

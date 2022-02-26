@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import destinations from '../services/destinations';
  
-const Resultats = () => {
+class Resultats extends React.Component {
+
+  state = {
+    results: []
+  }
+ getresultats = () => {
+
+ } 
+
+render(){
+
   return (
     <div>
-      <h1>Résultats de recherche</h1>
-      <h1>Brésil</h1>
+    <p>resultats</p>
+  
     </div>
   )
 }
- 
+}
+
 export default Resultats;

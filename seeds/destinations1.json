@@ -1,10 +1,11 @@
 [
     {
         "continent": "Europe",
-        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.riotgames.com%2Ffr%2Ftravaille[…]e=images&cd=vfe&ved=0CAsQjRxqFwoTCIjStajl8PUCFQAAAAAdAAAAABAE",
+        "image": "https://media.istockphoto.com/photos/eiffel-tour-and-from-trocadero-paris-picture-id1293189230?b=1&k=20&m=1293189230&s=170667a&w=0&h=BGcT5ezeFqRTZd16lBXcxrNnyhOjXTN8pnWtkUVkSLE=",
         "country": "France",
         "city": "Paris",
-        "temperature" : "2",
+        "temperature" : "1",
+        "variations" : "10",
         "bestperiod": "april",
         "incontournables":["Le Louvres Museum", "Champs Élysées", "Musée Grevin"],
         "mood": ["Visites"],
