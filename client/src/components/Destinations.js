@@ -43,7 +43,7 @@ class Destinations extends React.Component {
                   <h3> {destination.country} </h3>
                   
                   <button>
-                    <Link to="/citypage/${destination._id}">Je découvre cette ville</Link>
+                    <Link to={`/citypage/${destination._id}`}>Je découvre cette ville</Link>
                   </button>
                 </div>
               )

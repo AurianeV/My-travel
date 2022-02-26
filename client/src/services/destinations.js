@@ -7,5 +7,9 @@ export default {
   getDestinations() {
     return this.service.get('/destinations')
       .then(response => response.data)
+  },
+  getDestinationDetails(id) {
+    return this.service.get(`/destinations/${id}`)
+      .then(response => response.data)
   }
 }

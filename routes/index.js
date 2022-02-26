@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 router.get("/destinations", (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
   const filters = {}
-  console.log("test", req.query)
+  //console.log("test", req.query)
 
   if (req.query.continent) {
     // le user a choisi un ou plusieurs continents
@@ -40,7 +40,7 @@ router.get("/destinations", (req, res, next) => {
     filters.mood = {$in: req.query.mood}
   }
 
-console.log("hello", filters)
+//console.log("hello", filters)
   Destination.find(filters)
   .then(myDestinations => {
     console.log("destinations", myDestinations)

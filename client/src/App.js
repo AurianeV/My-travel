@@ -67,7 +67,7 @@ state = { user: null }
           <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>
           <Route path='/login' render={(props) => <Login history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/countryfilter' component={Countryfilter}/>
-          <Route path='/citypage' component={Citypage}/>
+          <Route path='/citypage/:id' component={Citypage}/>
           <Route path='/resultats' component={Resultats}/>
           <Route path='/edit' component={Edit}/>
       </Switch>
