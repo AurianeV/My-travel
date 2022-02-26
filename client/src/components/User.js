@@ -6,8 +6,10 @@ import authentification from '../services/authentification';
  
 class User extends Component {
   onLogout = () => {
+    console.log('just click')
     authentification.logout()
     .then( response => {
+      console.log ('response du serveur suite au logout', response)
       this.props.updateUser(null)
       this.props.history.push('/homepage')
     })

@@ -6,7 +6,7 @@ const destinationSchema = new Schema(
     continent:[{
         type: String,
         enum: ['Afrique', 'Europe', 'Asie', 'Océanie', 'Amérique du Nord', 'Amérique du Sud', 'Antarctique']
-    }],
+    }], // TODO: /!\ ['Afrique', 'Antartique']
 
     image:String,
 

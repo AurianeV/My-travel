@@ -22,8 +22,231 @@
     "incontournables":["Christ roi", "Tour de Belem", "Monastère des Hiéronymite"],
     "mood": ["Visites", "Plage"],
     "text":"Capitale du Portugal, Lisbonne — cette sublime ville ensoleillée du sud ouest de l’Europe — possède tous les atouts pour séduire les voyageurs. De ses rues typiques en pente, ses bâtiments colorés et ses spécialités culinaires, la ville aux 7 collines est devenue un incontournable des week-end détente (ou pas !). Impossible de s’y ennuyer ! Qu’on soit adepte de longues balades en ville, féru d’Histoire ou fêtard invétéré, partir à Lisbonne est toujours une bonne idée."   
-}
+},
 
+{
+    "continent": "Europe",
+    "image": "https://www.okvoyage.com/wp-content/uploads/2019/10/visiter-Madrid.jpg",
+    "country": "Espagne",
+    "city": "Madrid",
+    "temperature" : "3",
+    "bestperiod": ["june", "september"],
+    "incontournables":["Plaza Mayor de Madrid", "Palais Royal de Madrid", "Le jardin Botanique Royal"],
+    "mood": ["Visites"],
+    "text":"Madrid, joyeuse et animée 24 h/24, a la réputation d'être une ville ouverte où se mêlent des gens de tout type et d’origine diverse.Outre ses célèbres musées, ses avenues animées bordées de magasins en tout genre, ses restaurants de cuisine du monde et sa vie nocturne légendaire, Madrid surprend avec ses petits recoins historiques débordants de charme, ses bistrots centenaires authentiques où l’on se donne rendez-vous pour prendre un verre, ses quartiers aux styles très différents, ses centres culturels alternatifs et ses circuits ultra touristiques."   
+},
+{
+    "continent": "Europe",
+    "image": "https://media.routard.com/image/09/5/berlin.1554095.jpg",
+    "country": "Allemagne",
+    "city": "Berlin",
+    "temperature" : "2",
+    "bestperiod": ["may", "june", "july", "august", "september"],
+    "incontournables":["S’aventurer dans le monde du Kater Blau", "Marcher dans les rues de Nikolai", "Faire une croisière sur la rivière Spree"],
+    "mood": ["Visites"],
+    "text":"Vous avez faim de culture et envie de sortir dans les clubs électros les plus célèbre d’Europe jusqu’au petit matin ? Alors Berlin est la destination qu’il vous faut. Réputée festive, la capitale allemande offre également une multitude de lieux empreints d’histoire à parcourir."   
+},
+{
+    "continent": "Europe",
+    "image": "https://a.cdn-hotels.com/gdcs/production167/d32/70860665-c6b2-4b40-82e9-37b4bea5648e.jpg",
+    "country": "France",
+    "city": "Paris",
+    "temperature" : "2",
+    "bestperiod": ["may", "june", "july", "august", "september"],
+    "incontournables":["Montmartre", "Champs de Mars", "Pigalle"],
+    "mood": ["Visites"],
+    "text":"Vous ne l’avez encore jamais visitée ? Paris est une ville à découvrir si vous avez envie de romantisme, de gastronomie et d’architecture et SNCF vous y emmène depuis toutes les villes françaises en quelques heures. Du célèbre Marais au quartier chic de la Madeleine, vous adorerez flâner dans ses grandes rues aux imposants immeubles haussmanniens."   
+} ,
+{
+    "continent": "Europe",
+    "image": "https://www.okvoyage.com/wp-content/uploads/2020/10/budapest.jpeg",
+    "country": "Hongrie",
+    "city": "Budapest",
+    "temperature" : "3",
+    "bestperiod": ["july", "august"],
+  "incontournables":["Le parc Varosliget", "Les thermes de Szechenyi", "Westminster sur Danube"],
+    "mood": ["Visites"],
+    "text":"Budapest est l'une des villes les plus photogéniques d'Europe. Le paysage spectaculaire qui fait sa renommée est parsemé de merveilles architecturales du XIXe siècle disséminées le long du Danube. Parmi les sites remarquables se distinguent le bâtiment grandiose du Parlement, qui se dresse sur la rive du fleuve, et plusieurs basiliques magnifiques. De nombreux ponts médiévaux relient les deux côtés de la ville qui forment son nom : Buda et Pest."   
+},
+{
+    "continent": "Europe",
+    "image": "https://www.ou-et-quand.net/partir/images/illustration/londres_830.jpg",
+    "country": "Royaume-Uni",
+    "city": "Londres",
+    "temperature" : "2",
+    "bestperiod": ["may", "june", "july", "august", "september", "october"],
+  "incontournables": ["Big Ben", "British Museum", "Westminster Abbey"],
+    "mood": ["Visites"],
+    "text":"Petit tour en Angleterre avec les trains anglais pour explorer cette magnifique « ville-monde », comme certains aiment la surnommer. Vous serez rapidement imprégné par les multiples influences et cultures qu’on y trouve. Embarquez dans l’un des bus rouges qui sillonnent la ville pour découvrir ses monuments célèbres."   
+}, 
+{
+    "continent": "Europe",
+    "image": "https://img.static-rmg.be/a/view/q75/w1092/h615/2141062/shutterstock-541062103-jpg.jpg",
+    "country": "République tchèque",
+    "city": "Prague",
+    "temperature" : "2",
+    "bestperiod": ["may", "june", "september", "october"],
+  "incontournables": ["Le pont Charles", "Le Château Royal", "Le cimetière juif"],
+    "mood": ["Visites"],
+    "text":"À peine débarqué dans l’immense gare Centrale de celle que l’on appelle « capitale magique de l’Europe », vous comprendrez que la ville de Prague offre des trésors d’architecture et de culture avec ses nombreuses églises baroques, édifices Art nouveau et synagogues aux dorures exceptionnelles."   
+}, 
+{
+    "continent": "Europe",
+    "image": "https://a.cdn-hotels.com/gdcs/production122/d319/f4b58730-9bea-11e8-a1b5-0242ac110053.jpg?impolicy=fcrop&w=800&h=533&q=medium",
+    "country": "Italie",
+    "city": "Rome",
+    "temperature" : "3",
+    "bestperiod": ["june", "july", "august","september", "october"],
+  "incontournables": ["La fontaine de Trévi", "Le Vatican", "La Piazza Navona"],
+    "mood": ["Visites","Plage"],
+    "text":"Depuis la gare de Rome-Termini Trenitalia empruntez la Via Cavour et vous plongerez en deux temps trois mouvements dans l’ambiance romaine puisqu’au bout de cette rue, vous tomberez nez à nez avec le Colisée."   
+},
+{
+    "continent": "Europe",
+    "image": "https://cdn.generationvoyage.fr/2017/08/visiter-amsterdam-min-630x420.jpg",
+    "country": "Pays-Bas",
+    "city": "Amsterdam",
+    "temperature" : "2",
+    "bestperiod": ["may","june", "july", "august"],
+  "incontournables": ["Croisière sur les canaux", "Les coffee shops", "Les musées d’Amsterdam"],
+    "mood": ["Visites"],
+    "text":"Capitale des Pays-Bas, Amsterdam est surtout connue pour ses canaux et ses nombreux musées. Parmi les classiques, nous citerons le Musée Van Gogh, la maison d’Anne Franck ou le Rijkmuseum."   
+},
+{
+    "continent": "Europe",
+    "image": "https://www.guidesulysse.com/images/destinations/istock_000063201205_double.jpg",
+    "country": "Portugal",
+    "city": "Porto",
+    "temperature" : "2",
+    "bestperiod": ["june", "july", "august"],
+  "incontournables": ["La librairie Lello", "Le Palacio de Bolsa", "Les caves de Porto"],
+    "mood": ["Visites","Plage"],
+    "text":"Petite ville de pêcheurs, Porto saura vous séduire aussitôt arrivé au Portugal. Ses maisons colorées, ses marchés aux poissons pittoresques, ses plages et ses nombreux musées : tout est fait pour que vous passiez un séjour parfait."   
+},
+{
+    "continent": "Europe",
+    "image": "https://cdn.getyourguide.com/img/location/5e7dca6db35d7.jpeg/88.jpg",
+    "country": "Suisse",
+    "city": "Lugano",
+    "temperature" : "2",
+    "bestperiod": ["may", "june", "july", "august", "september"],
+  "incontournables": ["Lac Lugano", "La piazza della Riforma", "La cathédrale Di San Lorenza "],
+    "mood": ["Visites"],
+    "text":"Lugano, moins connue mais qui mérite amplement sa place dans le classement des plus belles villes d’Europe, se situe en Suisse italienne, dans le canton du Tessin. Elle vous promet d’ailleurs un séjour plus que charmant."   
+},
+
+{
+    "continent": "Afrique",
+    "image": "https://www.voyages-d-affaires.com/wp-content/uploads/2020/09/cape-town.jpg",
+    "country": "Afrique du Sud",
+    "city": "Le Cap",
+    "temperature" : "3",
+    "bestperiod": ["january", "february", "march", "april", "may", "october", "november", "december"],
+  "incontournables": ["Table Mountain", "Le Neighbourgoods Market", "La plage de Camps Bay"],
+    "mood": ["Randonnées", "Plage"],
+    "text":"Elle représente la cité mère de l’Afrique du Sud et occupe la première place au classement avec des habitudes de vie similaires à celles des européens et un cumul de musées et de monuments historiques qui raviront les assoiffés de la culture."   
+},
+{
+    "continent": "Afrique",
+    "image": "https://www.cercledesvoyages.com/wp-content/webp-express/webp-images/uploads/2020/12/pm_8002_101_101029-rg58acawkm-3886-1.jpeg.webp",
+    "country": "Tanzanie",
+    "city": "Zanzibar",
+    "temperature" : "3",
+    "bestperiod": ["july", "august", "september"],
+  "incontournables": ["Le village de Paje", "Chumble Island", "Les plantations d’épices"],
+    "mood": ["Randonnées", "Plage", "Visites"],
+    "text":"La ville de Zanzibar représente l’un des sites les plus emblématiques de l’Afrique. Elle contient des lieux touristiques tels que la Stone Town dont les maisons sont construites en pierres de corail."   
+},
+{
+    "continent": "Afrique",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/69/8f/fb/bookings-for-vilankulo.jpg?w=500&h=300&s=1",
+    "country": "Mozambique",
+    "city": "Vilankulo",
+    "temperature" : "3",
+    "bestperiod": ["april", "may", "june", "july", "august", "september", "october", "november"],
+  "incontournables": ["L’archipel de Bazaruto", "Le Mercado Municipal", "Observer les baleines"],
+    "mood": ["Randonnées", "Plage", "Visites"],
+    "text":"Le Mozambique… c’est un pays souvent oublié des voyageurs au profit de ses voisins plus renommés comme les Seychelles, l’île Maurice, Madagascar… Jusqu’ici, il n’attire que les plus curieux et les amateurs de randonnées."   
+},
+{
+    "continent": "Afrique",
+    "image": " https://content.r9cdn.net/rimg/dimg/ee/fe/e77ecd30-city-23204-16561c23ef7.jpg?width=1200&height=630&crop=true",
+    "country": "Namibie",
+    "city": "Windhoek",
+    "temperature" : "3",
+    "bestperiod": ["april", "september", "october", "november"],
+  "incontournables": ["Namibia Craft Centre", "NamibRand Nature Reserve", "Daan Viljoen Reserve"],
+    "mood": ["Randonnées", "Visites"],
+    "text":" Windhoek, capitale de la Namibie située à 1650 mètres d'altitude, est la plus grande ville du pays et elle se situe en son centre. Ce nom donné par les afrikaners lors de la colonisation allemande, signifie le coin du vent. "   
+},
+{
+    "continent": "Afrique",
+    "image": " https://www.ou-et-quand.net/partir/images/illustration/nairobi_237.jpg",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "temperature" : "3",
+    "bestperiod": ["january", "february", "march", "december"],
+  "incontournables": ["Le parc national de Nairobi", "Bomas of Kenya", "La mosquée Jamia"],
+    "mood": ["Randonnées", "Visites"],
+    "text":" La ville regorge de simples marécages non habités il y a quelques années, cette ville regorge aujourd’hui des grattes ciels modernes. Le Kilimandjaro, le mont Kenya, le parc national de Nairobi et le musée de Karen Blixen sont également de véritables merveilles à explorer."   
+},
+
+{
+    "continent": "Afrique",
+    "image": " https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/0a/24/49/4c.jpg",
+    "country": "Rwanda",
+    "city": "Kigali",
+    "temperature" : "3",
+    "bestperiod": ["january", "june", "july", "august"],
+  "incontournables": ["Kigali Genocide Memorial", "Musée du Palais Présidentiel", "Le marché de Kimronko"],
+    "mood": ["Visites"],
+    "text":" C’est l’icône du relèvement du pays après de sombres périodes de son histoire, cette ville est aujourd’hui l’une capitales administratives les plus en vue de l’Afrique. Elle regorge de merveilles naturelles et offre la possibilité de visite du Mémorial du Génocide."   
+},
+
+{
+    "continent": "Asie",
+    "image": " https://www.atout-france.fr/sites/default/files/market/2020/08/pac_hk_photo_0.jpg",
+    "country": "Chine",
+    "city": "Hong Kong",
+    "temperature" : "3",
+    "bestperiod": ["april", "october", "november"],
+  "incontournables": ["Ocean Park", "Temple street", "Victoria Peak"],
+    "mood": ["Visites", "Plage"],
+    "text":" Cette ville chinoise est un état dans l’Etat. Ici tout est dans la démesure. L’agglomération hongkongaise est l’une des plus densément peuplées du monde. Cette ville est envahie de grattes ciel et de temples traditionnels mais aussi de routes superposées. "   
+},
+{
+    "continent": "Asie",
+    "image": " https://upload.wikimedia.org/wikipedia/commons/0/00/Registan_square_Samarkand.jpg",
+    "country": "Ouzbékistan",
+    "city": "Samarkand",
+    "temperature" : ["3", "4"],
+    "bestperiod": ["april", "may", "september", "october"],
+  "incontournables": ["La place du Régistan", "Le Maussaulé Gour Emir", "La mosquée Bibi-Khanym"],
+    "mood": ["Visites"],
+    "text":" Quelque part en Asie centrale se trouve une ville parfois oubliée des voyageurs modernes. Une ville qui autrefois était une ville fréquentée des voyageurs car elle était une étape incontournable de la route de la soie. "   
+},
+{
+    "continent": "Asie",
+    "image": " https://www.larousse.fr/encyclopedie/data/images/1314685-P%C3%A9kin.jpg",
+    "country": "Chine",
+    "city": "Pékin",
+    "temperature" : ["2", "3", "4"],
+    "bestperiod": ["april", "may", "september", "october"],
+  "incontournables": ["La grande muraille de Chine", "Le temple du ciel", "L’aquarium de Pékin"],
+    "mood": ["Visites"],
+    "text":" La capitale de l’Empire du milieu cache bien son jeu. Pékin est une ville hallucinante où l’on peut s’amuser à s’y perdre pendant des semaines. Car ici tout est démesuré, moderne et high tech."   
+},
+{
+    "continent": "Asie",
+    "image": " https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=700&h=-1&s=1",
+    "country": "Vietnam",
+    "city": "Hanoï",
+    "temperature" : ["3", "4"],
+    "bestperiod": ["april", "march", "november", "october"],
+  "incontournables": ["Le vieux centre de Hanoï", "Une croisière sur la Baie d’Halong", "La cathédrale Saint-Joseph"],
+    "mood": ["Visites"],
+    "text":" Encerclée par les eaux, la capitale du Vietnam concentre 7 millions d’habitants dont près de 2,8 millions vivent dans le centre ville. Située dans le nord du Vietnam sur le delta du fleuve rouge, Hanoï est donc un concentré de culture unique, d’une cuisine atypique et d’une architecture chargée d’histoire."   
+}
 
 ]
    
