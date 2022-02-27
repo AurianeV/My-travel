@@ -535,6 +535,10 @@ h3{
 
 /* USER ACCOUNT*/
 
+.userimg{
+  width: 300px;
+}
+
 .align{
   display: flex;
   justify-content: center;

@@ -7,8 +7,7 @@ class Edit extends Component {
   render(){
   return (
     <div>
-      <h1>Edit Mon Compte</h1>
-      
+      <h1>Edit Mon Compte</h1>  
     </div>
   )};
 }
