@@ -78,7 +78,7 @@ class Countryfilter extends Component {
       
       <h1>Looking for <img class="logo"  src="/MY Travel (200 × 200 px).png" /></h1>
       <form class="divp" onSubmit={this.handleFormSubmit}> 
-        <h3>Continents to Explore</h3>
+        <h3>Continents to Explore 🌍</h3>
 
         <section id="inputdiv">
           <div class="test">
@@ -111,7 +111,7 @@ class Countryfilter extends Component {
           </div>
         </section>
 
-        <h3>When I want to leave</h3>
+        <h3>When I want to leave 📆</h3>
         <section class="inputdiv2" >
           <div>
             <div id="field">
@@ -191,7 +191,7 @@ class Countryfilter extends Component {
           </div>
         </section>
 
-        <h3>Temperatures</h3>
+        <h3>Temperatures 🌡️</h3>
 
         <section id="inputdiv">
           <div >
@@ -218,7 +218,7 @@ class Countryfilter extends Component {
           </div>
         </section>
 
-        <h3>My Mood</h3>
+        <h3>My Mood 🧭</h3>
 
         <section id="inputdiv">
           <div >

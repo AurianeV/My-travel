@@ -18,6 +18,7 @@
         "image": "https://img-4.linternaute.com/7GvKgODhSJWxaWCPn72qvLeA4w8=/660x366/smart/5b4ef0d8e6c64a99990e2b6e0e6a7de2/ccmcms-linternaute/10985721.jpg",
         "country": "Portugal",
         "city": "Lisbon",
+        "variations" : "10",
         "temperature" : "3",
         "bestperiod": ["april", "may", "june", "july", "august", "september"],
         "incontournables":["Christ roi", "Tour de Belem", "Monastère des Hiéronymite"],
@@ -32,11 +33,77 @@
         "country": "Espagne",
         "city": "Madrid",
         "temperature" : "3",
+        "variations" : "20",
         "bestperiod": ["june", "september"],
         "incontournables":["Plaza Mayor de Madrid", "Palais Royal de Madrid", "Le jardin Botanique Royal"],
         "mood": ["Visites"],
         "text":"Madrid, joyeuse et animée 24 h/24, a la réputation d'être une ville ouverte où se mêlent des gens de tout type et d’origine diverse.Outre ses célèbres musées, ses avenues animées bordées de magasins en tout genre, ses restaurants de cuisine du monde et sa vie nocturne légendaire, Madrid surprend avec ses petits recoins historiques débordants de charme, ses bistrots centenaires authentiques où l’on se donne rendez-vous pour prendre un verre, ses quartiers aux styles très différents, ses centres culturels alternatifs et ses circuits ultra touristiques."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://media.routard.com/image/09/5/berlin.1554095.jpg",
+        "country": "Allemagne",
+        "city": "Berlin",
+        "temperature" : "2",
+        "bestperiod": ["may", "june", "july", "august", "september"],
+        "incontournables":["S’aventurer dans le monde du Kater Blau", "Marcher dans les rues de Nikolai", "Faire une croisière sur la rivière Spree"],
+        "mood": ["Visites"],
+        "text":"Vous avez faim de culture et envie de sortir dans les clubs électros les plus célèbre d’Europe jusqu’au petit matin ? Alors Berlin est la destination qu’il vous faut. Réputée festive, la capitale allemande offre également une multitude de lieux empreints d’histoire à parcourir."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://www.okvoyage.com/wp-content/uploads/2020/10/budapest.jpeg",
+        "country": "Hongrie",
+        "city": "Budapest",
+        "temperature" : "3",
+        "bestperiod": ["july", "august"],
+      "incontournables":["Le parc Varosliget", "Les thermes de Szechenyi", "Westminster sur Danube"],
+        "mood": ["Visites"],
+        "text":"Budapest est l'une des villes les plus photogéniques d'Europe. Le paysage spectaculaire qui fait sa renommée est parsemé de merveilles architecturales du XIXe siècle disséminées le long du Danube. Parmi les sites remarquables se distinguent le bâtiment grandiose du Parlement, qui se dresse sur la rive du fleuve, et plusieurs basiliques magnifiques. De nombreux ponts médiévaux relient les deux côtés de la ville qui forment son nom : Buda et Pest."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://www.ou-et-quand.net/partir/images/illustration/londres_830.jpg",
+        "country": "Royaume-Uni",
+        "city": "Londres",
+        "temperature" : "2",
+        "bestperiod": ["may", "june", "july", "august", "september", "october"],
+      "incontournables": ["Big Ben", "British Museum", "Westminster Abbey"],
+        "mood": ["Visites"],
+        "text":"Petit tour en Angleterre avec les trains anglais pour explorer cette magnifique « ville-monde », comme certains aiment la surnommer. Vous serez rapidement imprégné par les multiples influences et cultures qu’on y trouve. Embarquez dans l’un des bus rouges qui sillonnent la ville pour découvrir ses monuments célèbres."   
+    }, 
+    {
+        "continent": "Europe",
+        "image": "https://img.static-rmg.be/a/view/q75/w1092/h615/2141062/shutterstock-541062103-jpg.jpg",
+        "country": "République tchèque",
+        "city": "Prague",
+        "temperature" : "2",
+        "bestperiod": ["may", "june", "september", "october"],
+      "incontournables": ["Le pont Charles", "Le Château Royal", "Le cimetière juif"],
+        "mood": ["Visites"],
+        "text":"À peine débarqué dans l’immense gare Centrale de celle que l’on appelle « capitale magique de l’Europe », vous comprendrez que la ville de Prague offre des trésors d’architecture et de culture avec ses nombreuses églises baroques, édifices Art nouveau et synagogues aux dorures exceptionnelles."   
+    }, 
+    {
+        "continent": "Europe",
+        "image": "https://a.cdn-hotels.com/gdcs/production122/d319/f4b58730-9bea-11e8-a1b5-0242ac110053.jpg?impolicy=fcrop&w=800&h=533&q=medium",
+        "country": "Italie",
+        "city": "Rome",
+        "temperature" : "3",
+        "bestperiod": ["june", "july", "august","september", "october"],
+      "incontournables": ["La fontaine de Trévi", "Le Vatican", "La Piazza Navona"],
+        "mood": ["Visites","Plage"],
+        "text":"Depuis la gare de Rome-Termini Trenitalia empruntez la Via Cavour et vous plongerez en deux temps trois mouvements dans l’ambiance romaine puisqu’au bout de cette rue, vous tomberez nez à nez avec le Colisée."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://cdn.generationvoyage.fr/2017/08/visiter-amsterdam-min-630x420.jpg",
+        "country": "Pays-Bas",
+        "city": "Amsterdam",
+        "temperature" : "2",
+        "bestperiod": ["may","june", "july", "august"],
+      "incontournables": ["Croisière sur les canaux", "Les coffee shops", "Les musées d’Amsterdam"],
+        "mood": ["Visites"],
+        "text":"Capitale des Pays-Bas, Amsterdam est surtout connue pour ses canaux et ses nombreux musées. Parmi les classiques, nous citerons le Musée Van Gogh, la maison d’Anne Franck ou le Rijkmuseum."   
     }
-    
     
     ]

@@ -4,12 +4,12 @@ import destinations from '../services/destinations';
  
 class Resultats extends React.Component {
 
-  state = {
+ /* state = {
     results: []
   }
  getresultats = () => {
 
- } 
+ } */
 
 render(){
 

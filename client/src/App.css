@@ -479,6 +479,60 @@ h3{
   display: flex;
 }
 
+
+/* CITY PAGE */
+
+.globaldiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.divsize{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.middle{
+  margin-bottom: 30px;
+}
+
+.pic{
+  width: 70%;
+  
+}
+
+
+.text{
+  display: flex;
+  justify-content: center;
+  text-align:justify;
+  margin-top: 50px;
+  padding-top: 20px;
+}
+
+.topics{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.art{
+  width: 50%;
+}
+
 /* USER ACCOUNT*/
 
 .align{
