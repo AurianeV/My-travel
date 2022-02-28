@@ -196,23 +196,23 @@ class Countryfilter extends Component {
         <section id="inputdiv">
           <div >
             <label>
-            <input type="checkbox" value="" name="temperature"  />
+            <input type="checkbox" value="-10°C to 0°C" name="temperature"  />
               -10°C to 0°C
             </label>
             <label>
-            <input type="checkbox" value="" name="temperature"  />
+            <input type="checkbox" value="1°C to 10°C" name="temperature"  />
               1°C to 10°C
             </label>
             <label>
-            <input type="checkbox" value="" name="temperature"  />
+            <input type="checkbox" value="11°C to 20°C" name="temperature"  />
               11°C to 20°C
             </label>
             <label>
-            <input type="checkbox" value="" name="temperature"  />
+            <input type="checkbox" value="21°C to 30°C" name="temperature"  />
               21°C to 30°C
             </label>
             <label>
-            <input type="checkbox" value="" name="temperatures"  /> 
+            <input type="checkbox" value="31°C to 40°C" name="temperature"  /> 
               31°C to 40°C
             </label>
           </div>
