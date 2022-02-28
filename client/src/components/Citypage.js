@@ -27,10 +27,33 @@ class Citypage extends React.Component {
 //Use componentDidMount
     return (
       <div className="destination-ctn">
-        <p>{this.state.ville.city}</p>
-        <p>{this.state.ville.country}</p>
-        <img className="destination" src={this.state.ville.image} />
-        <p>{this.state.ville.incontournables}</p>
+        <div class="globaldiv">
+        <section class="divsize">
+          <img class="pic"  src={this.state.ville.image} />
+        </section>
+        <section class="middle" class="divsize">
+          <h1>{this.state.ville.city}</h1>
+          <h3>{this.state.ville.country}, {this.state.ville.continent}</h3>
+          <p class="text">"{this.state.ville.text}"</p>
+        </section>
+        </div>
+        <section class="bottom">
+          <article class="art">
+          <h1>❣️</h1>
+          <h3>Incontournables</h3>
+          <p>{this.state.ville.incontournables}</p>
+          </article>
+          <article class="art">
+          <h1>📅</h1>
+          <h3>Best Period</h3>
+          <p>{this.state.ville.bestperiod}</p>
+          </article>
+          <article class="art">
+          <h1>🌡️</h1>
+          <h3>Temperatures</h3>
+          <p>{this.state.ville.variations}</p>
+          </article>
+        </section>
       </div>
     )
   }

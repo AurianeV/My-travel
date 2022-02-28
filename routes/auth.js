@@ -27,6 +27,7 @@ router.get("/loggedin", (req, res) => {
 
 //INSCRIPTION 
 
+
 router.post("/signup", isLoggedOut, (req, res) => {
   const { firstname, lastname, email, password } = req.body;
 
@@ -58,6 +59,7 @@ router.post("/signup", isLoggedOut, (req, res) => {
   // Search the database for a user with the email submitted in the form
   User.findOne({ email }).then((found) => {
     // If the email is found, send the message email is taken
+    
     if (found) {
       return res.status(400).json({ errorMessage: "email already taken." });
     }

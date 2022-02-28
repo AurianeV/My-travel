@@ -1,10 +1,10 @@
 [
 {
     "continent": "Europe",
-    "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.riotgames.com%2Ffr%2Ftravaille[…]e=images&cd=vfe&ved=0CAsQjRxqFwoTCIjStajl8PUCFQAAAAAdAAAAABAE",
+    "image": "https://www.istockphoto.com/photo/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-the-rays-of-gm1185953092-334428509?utm_source=unsplash&utm_medium=affiliate&utm_campaign=category_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fimages%2Ftravel%2Fparis&utm_term=paris%3A%3A%3A",
     "country": "France",
     "city": "Paris",
-    "temperature" : "2",
+    "temperature" : "1",
     "bestperiod": "april",
     "incontournables":["Le Louvres Museum", "Champs Élysées", "Musée Grevin"],
     "mood": ["Visites"],
@@ -46,17 +46,7 @@
     "mood": ["Visites"],
     "text":"Vous avez faim de culture et envie de sortir dans les clubs électros les plus célèbre d’Europe jusqu’au petit matin ? Alors Berlin est la destination qu’il vous faut. Réputée festive, la capitale allemande offre également une multitude de lieux empreints d’histoire à parcourir."   
 },
-{
-    "continent": "Europe",
-    "image": "https://a.cdn-hotels.com/gdcs/production167/d32/70860665-c6b2-4b40-82e9-37b4bea5648e.jpg",
-    "country": "France",
-    "city": "Paris",
-    "temperature" : "2",
-    "bestperiod": ["may", "june", "july", "august", "september"],
-    "incontournables":["Montmartre", "Champs de Mars", "Pigalle"],
-    "mood": ["Visites"],
-    "text":"Vous ne l’avez encore jamais visitée ? Paris est une ville à découvrir si vous avez envie de romantisme, de gastronomie et d’architecture et SNCF vous y emmène depuis toutes les villes françaises en quelques heures. Du célèbre Marais au quartier chic de la Madeleine, vous adorerez flâner dans ses grandes rues aux imposants immeubles haussmanniens."   
-} ,
+
 {
     "continent": "Europe",
     "image": "https://www.okvoyage.com/wp-content/uploads/2020/10/budapest.jpeg",

@@ -66,7 +66,7 @@ state = { user: null }
           <Route path='/user' render={(props) => <User userInSession = {this.state.user} history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>
           <Route path='/login' render={(props) => <Login history={props.history} updateUser={this.updateUser}/>}/>
-          <Route path='/countryfilter' component={Countryfilter}/>
+          <Route path='/countryfilter' render ={(props) => <Countryfilter history={props.history} />}/>
           <Route path='/citypage/:id' component={Citypage}/>
           <Route path='/resultats' component={Resultats}/>
           <Route path='/edit' component={Edit}/>

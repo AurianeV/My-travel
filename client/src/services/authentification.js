@@ -25,14 +25,17 @@ export default {
     return this.service.get('/logout', {})
       .then(response => response.data)
   },
-  /*edit(username, campus, course) {
+
+  edit(birthdate, age, gender, image) {
     return this.service.post('/edit', {
-      username,
-      campus,
-      course
+      birthdate,
+      age,
+      gender,
+      image
     })
       .then(response => response.data)
-  }, */
+  },
+
   upload(formdata) {
     return this.service.post('/upload', formdata)
       .then(response => response.data)

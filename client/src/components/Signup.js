@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Signup extends Component {
  
-  state = { firstname: "", lastname: "", email: "", password: "" }
+  state = { firstname: "", lastname: "", email: "", password: ""}
 
   handleFormSubmit = (event) => {
     event.preventDefault();

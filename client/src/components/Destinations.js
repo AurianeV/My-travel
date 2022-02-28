@@ -37,14 +37,20 @@ class Destinations extends React.Component {
               console.log('destination=', destination)
               return (
                 // nom pays, nom ville, image, lien
-                <div>
-                  <img className="destination" src={destination.image} />
-                  <h1> {destination.city} </h1>
-                  <h3> {destination.country} </h3>
+
+                
+                <div class="divdestination">
+                  <div class="blocdestination">
+                    <img class="picdestination"  src={destination.image} />
+                    <h1 class="cityname"> {destination.city} </h1>
+                    <h3 class="countryname"> {destination.country} </h3>
+                    
+                      <Link class="btncity" to={`/citypage/${destination._id}`}>Je découvre cette ville</Link>
+                    
                   
-                  <button>
-                    <Link to={`/citypage/${destination._id}`}>Je découvre cette ville</Link>
-                  </button>
+                  </div>
+                 
+                 
                 </div>
               )
             })
