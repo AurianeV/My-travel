@@ -35,6 +35,28 @@
         "incontournables":["Plaza Mayor de Madrid", "Palais Royal de Madrid", "Le jardin Botanique Royal"],
         "mood": ["Visites"],
         "text":"Madrid, joyeuse et animée 24 h/24, a la réputation d'être une ville ouverte où se mêlent des gens de tout type et d’origine diverse.Outre ses célèbres musées, ses avenues animées bordées de magasins en tout genre, ses restaurants de cuisine du monde et sa vie nocturne légendaire, Madrid surprend avec ses petits recoins historiques débordants de charme, ses bistrots centenaires authentiques où l’on se donne rendez-vous pour prendre un verre, ses quartiers aux styles très différents, ses centres culturels alternatifs et ses circuits ultra touristiques."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://media.routard.com/image/09/5/berlin.1554095.jpg",
+        "country": "Allemagne",
+        "city": "Berlin",
+        "temperature" : "2",
+        "bestperiod": ["may", "june", "july", "august", "september"],
+        "incontournables":["S’aventurer dans le monde du Kater Blau", "Marcher dans les rues de Nikolai", "Faire une croisière sur la rivière Spree"],
+        "mood": ["Visites"],
+        "text":"Vous avez faim de culture et envie de sortir dans les clubs électros les plus célèbre d’Europe jusqu’au petit matin ? Alors Berlin est la destination qu’il vous faut. Réputée festive, la capitale allemande offre également une multitude de lieux empreints d’histoire à parcourir."   
+    },
+    {
+        "continent": "Europe",
+        "image": "https://a.cdn-hotels.com/gdcs/production167/d32/70860665-c6b2-4b40-82e9-37b4bea5648e.jpg",
+        "country": "France",
+        "city": "Paris",
+        "temperature" : "2",
+        "bestperiod": ["may", "june", "july", "august", "september"],
+        "incontournables":["Montmartre", "Champs de Mars", "Pigalle"],
+        "mood": ["Visites"],
+        "text":"Vous ne l’avez encore jamais visitée ? Paris est une ville à découvrir si vous avez envie de romantisme, de gastronomie et d’architecture et SNCF vous y emmène depuis toutes les villes françaises en quelques heures. Du célèbre Marais au quartier chic de la Madeleine, vous adorerez flâner dans ses grandes rues aux imposants immeubles haussmanniens."   
     }
     
     
