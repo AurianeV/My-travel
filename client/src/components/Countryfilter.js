@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import destinations from '../services/destinations';
+import queryString from 'query-string';
 
 class Countryfilter extends Component {
   
@@ -48,6 +49,26 @@ class Countryfilter extends Component {
       }
     })
     console.log('moods', moods)
+    const query = queryString.stringify({
+      continent: continents,
+      bestperiod : periode,
+      temperature: temperatures, 
+      mood:moods
+    }
+  
+
+    )
+
+    this.props.history.push({pathname: `/resultats`, search: `?${query}`})
+    
+  
+
+
+    // rediriger vers la "page" /resultats?continent=europe&continent=asia&mood=....
+    //
+    // - consitutuer la chaine continent=europe&continent=asia&mood=.... grace au package 'query-string' (.stringify({}))
+
+
      // faire const aussi pour les autres champs
 
     // const continent = this.state.continent;
@@ -87,7 +108,7 @@ class Countryfilter extends Component {
               Africa
             </label>
             <label>
-              <input type="checkbox" value="europe" name="continent"  />
+              <input type="checkbox" value="Europe" name="continent"  />
               Europe
             </label>
             <label>

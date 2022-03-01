@@ -45,7 +45,7 @@ router.post("/signup", isLoggedOut, (req, res) => {
   
 
   if (!password) {
-    res.status(400).json({message: "Indicate password"});
+    res.status(400).json({errorMessage: "Indicate password"});
     return;
   }
 

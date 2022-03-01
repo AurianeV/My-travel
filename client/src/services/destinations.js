@@ -4,25 +4,12 @@ export default {
     baseURL: `${process.env.REACT_APP_APIURL || "http://localhost:5005"}`,
     withCredentials: true
   }),
-  getDestinations() {
+  getDestinations(query="") {
+    let url = '/destinations'
+    
+    if(query) url = url += query
 
-  /* NO DEFINED CHECK ON TUESDAY
-  const myquerystring = querystring.stringify({
-    continent: continents,
-    bestperiod: periode,
-    temperature: temperatures,
-    mood: moods,
-  })
-
-    let qs = ""
-    if (myquerystring) {
-      qs = `?${myquerystring}`
-    }
-  
-    return this.service.get(`/destinations${qs}`)
-      .then(response => response.data)
-  */
-    return this.service.get('/destinations')
+    return this.service.get(url)
       .then(response => response.data)
   },
   getDestinationDetails(id) {

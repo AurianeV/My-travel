@@ -7,6 +7,8 @@ const User = require("../models/User.model");
 const mongoose = require('mongoose');
 
 
+
+
 /*GET recherche de destinations */
 router.get("/destinations", (req, res, next) => {
   //res.json("PAGE RECHERCHE ");
@@ -44,13 +46,15 @@ router.get("/destinations", (req, res, next) => {
   Destination.find(filters)
   .then(myDestinations => {
     console.log("destinations", myDestinations)
-    res.json({ destinations : myDestinations })
+    res.json({destinations : myDestinations })
   })
   .catch(error => {
     console.log(error)
     res.status(500).json(error);
   })
 });
+
+
 
 /* GET Ville précise */
 

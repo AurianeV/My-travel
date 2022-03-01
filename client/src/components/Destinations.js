@@ -8,7 +8,7 @@ class Destinations extends React.Component {
     destinations: []
   }
 
-  getpays = () => {
+  /*getpays = () => {
     destinations.getDestinations()
       .then(data => {
         console.log('destinations repondues par le serveur:', data)
@@ -21,7 +21,7 @@ class Destinations extends React.Component {
   componentDidMount = () => {
     this.getpays()
     console.log("this state destinations", this.state.destinations)
-  }
+  }*/
 
   render() {
     console.log('state inside render, 0 city', this.state.destinations[0])

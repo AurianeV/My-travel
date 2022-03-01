@@ -22,7 +22,7 @@ class Signup extends Component {
         this.props.updateUser(response)
         this.props.history.push('/user')
       })
-      .catch(error => console.log(error))
+      .catch(error => this.setState({}))
   }
 
   handleChange = (event) => {
@@ -32,6 +32,7 @@ class Signup extends Component {
 
   render() {
     return (
+      
       <div class="signupgeneral">
         <div>
           <img class="travelpic" src="/pictravel2.png"/>
@@ -64,9 +65,7 @@ class Signup extends Component {
           <button class="btnregister" onClick={this.handleFormSubmit} type="submit">Registration</button>
         </form>
         <p>Already have an account?
-          <button class="alreadylogin">
-            <Link to={"/login"}>Login</Link>
-          </button>
+            <Link class="alreadylogin" to={"/login"}>Login</Link>
         </p>
       </div>
       </div>
