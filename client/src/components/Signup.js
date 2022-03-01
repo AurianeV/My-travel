@@ -22,7 +22,7 @@ class Signup extends Component {
         this.props.updateUser(response)
         this.props.history.push('/user')
       })
-      .catch(error => this.setState({}))
+      .catch(error => this.setState({error}))
   }
 
   handleChange = (event) => {
@@ -33,6 +33,7 @@ class Signup extends Component {
   render() {
     return (
       
+
       <div class="signupgeneral">
         <div>
           <img class="travelpic" src="/pictravel2.png"/>

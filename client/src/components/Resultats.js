@@ -27,12 +27,40 @@ componentDidMount = () => {
 render(){
 
   return (
-    <div>
+    <div class="results-ctn">
     {
       this.state.results.map( (destination, idx) => {
-        return <p>{destination.city}</p>
-    })} 
+        return (
+        
+          <div class="divdestination">
+          <div class="blocdestination">
+            <img class="picdestination"  src={destination.image} />
+            <h1 class="cityname"> {destination.city} </h1>
+            <h3 class="countryname"> {destination.country} </h3>
+            
+              <Link class="btncity" to={`/citypage/${destination._id}`}>Je découvre cette ville</Link>
+            
+          
+          </div>
+         
+         
+        </div>
+        
+
+
+
+        )
+
+      })
+    } 
+
+
   
+
+
+
+
+
     </div>
   )
 }

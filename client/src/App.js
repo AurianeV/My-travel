@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import Destinations from './components/Destinations';
-import Favoris from './components/Favoris';
 import User from './components/User';
 import Signup from './components/Signup';
 import Login from './components/Login';
@@ -62,7 +61,6 @@ state = { user: null }
       <Switch>
           <Route path='/homepage' component={Homepage}/>
           <Route path='/destinations' component={Destinations}/>
-          <Route path='/favoris' component={Favoris}/>
           <Route path='/user' render={(props) => <User userInSession = {this.state.user} history={props.history} updateUser={this.updateUser}/>}/>
           <Route path='/signup' render={(props) => <Signup history={props.history} updateUser={this.updateUser} />}/>
           <Route path='/login' render={(props) => <Login history={props.history} updateUser={this.updateUser}/>}/>

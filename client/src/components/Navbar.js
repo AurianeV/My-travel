@@ -7,7 +7,6 @@ const navbar = () => {
         <ul class="nav1">
           <li ><Link class="my" to='/homepage'> <img class="logo"  src="/MY Travel (200 × 200 px).png" /> </Link></li>
           <li><Link to='/destinations'> <img class="destinationideas"  src="/destinationideas.png" /> </Link></li>
-          <li><Link to='/favoris'> <img class="mydestinations"  src="/mydestinations.png" /> </Link></li>
           <li><Link to='/user'> <img class="myaccount"  src="/myaccount.png" /> </Link></li>
         </ul>
         <ul class="nav2">

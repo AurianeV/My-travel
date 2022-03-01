@@ -101,7 +101,7 @@ router.put("/favoris", isLoggedIn, (req, res) => {
 
 /* GET Destinations dans page favoris*/
 
-router.get('/favoris', isLoggedIn, (req, res, next) => {
+/*router.get('/favoris', isLoggedIn, (req, res, next) => {
   
   const userid = req.session.user._id
  
@@ -114,7 +114,7 @@ router.get('/favoris', isLoggedIn, (req, res, next) => {
     return res.status(500).json({ errorMessage: error.message });
   })
   
- });
+ });*/
 
 
 module.exports = router;
