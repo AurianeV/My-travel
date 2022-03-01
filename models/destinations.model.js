@@ -5,7 +5,7 @@ const destinationSchema = new Schema(
   {
     continent:[{
         type: String,
-        enum: ['Afrique', 'Europe', 'Asie', 'Océanie', 'Amérique du Nord', 'Amérique du Sud', 'Antarctique']
+        enum: ['africa', 'europe', 'asia', 'oceania', 'ameriquen', 'ameriques', 'antarctic']
     }], // TODO: /!\ ['Afrique', 'Antartique']
 
     image:String,
@@ -27,7 +27,7 @@ const destinationSchema = new Schema(
 
     mood: [{
         type: String, 
-        enum: ['Randonnées', 'Ski', 'Plage', 'Visites']
+        enum: ['hiking', 'ski', 'beach', 'visit']
     }],
     text: String,
 

@@ -108,7 +108,7 @@ class Countryfilter extends Component {
               Africa
             </label>
             <label>
-              <input type="checkbox" value="Europe" name="continent"  />
+              <input type="checkbox" value="europe" name="continent"  />
               Europe
             </label>
             <label>
@@ -217,23 +217,23 @@ class Countryfilter extends Component {
         <section id="inputdiv">
           <div >
             <label>
-            <input type="checkbox" value="-10°C to 0°C" name="temperature"  />
+            <input type="checkbox" value="0" name="temperature"  />
               -10°C to 0°C
             </label>
             <label>
-            <input type="checkbox" value="1°C to 10°C" name="temperature"  />
+            <input type="checkbox" value="1" name="temperature"  />
               1°C to 10°C
             </label>
             <label>
-            <input type="checkbox" value="11°C to 20°C" name="temperature"  />
+            <input type="checkbox" value="2" name="temperature"  />
               11°C to 20°C
             </label>
             <label>
-            <input type="checkbox" value="21°C to 30°C" name="temperature"  />
+            <input type="checkbox" value="3" name="temperature"  />
               21°C to 30°C
             </label>
             <label>
-            <input type="checkbox" value="31°C to 40°C" name="temperature"  /> 
+            <input type="checkbox" value="4" name="temperature"  /> 
               31°C to 40°C
             </label>
           </div>
