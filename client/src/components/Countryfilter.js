@@ -155,7 +155,7 @@ class Countryfilter extends Component {
             </div>
             <div id="field">
               <label>
-              <input type="checkbox" value="march" name="bestperiod"  />
+              <input type="checkbox" value="april" name="bestperiod"  />
                 April
               </label>
             </div>

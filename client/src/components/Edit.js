@@ -27,8 +27,11 @@ export default class extends React.Component {
     if (this.props.user === false) return <Redirect to="/homepage" />
 
     return (
+<div>
+<h1>edit profil</h1>
+</div>
+      
 
-      <h1>edit profil</h1>
  /*<div>
       <h1>Profile</h1>
 

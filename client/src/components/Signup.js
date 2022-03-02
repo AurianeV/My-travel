@@ -22,7 +22,7 @@ class Signup extends Component {
         this.props.updateUser(response)
         this.props.history.push('/user')
       })
-      .catch(error => this.setState({error}))
+      .catch(error => this.setState({error}), this.props.history.push('/login'))
   }
 
   handleChange = (event) => {
