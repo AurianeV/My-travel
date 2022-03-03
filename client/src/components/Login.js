@@ -55,7 +55,7 @@ class Login extends Component {
         value={this.state.password} onChange={e => this.handleChange(e)}
       />
         <button class="btnlogin" type="submit">Login</button>
-        {this.state.error && (<p>{this.state.error}</p>)}
+        {this.state.error && (<p class="errormsg">{this.state.error}</p>)}
     </form>
     <p>Don't have account? 
          <button class="notcount"> <Link to={"/signup"}>Register</Link> </button>

@@ -618,6 +618,13 @@ h3 {
                 inset 2px 2px 3px rgba(255, 255, 255, 0.6);
   }
 
+/* MESSAGE ERREUR */
+
+.errormsg {
+  color:red;
+  font-weight: bold;
+}
+
 /* FOOTER */
 
 .insta, .facebook, .twitter, .mail {

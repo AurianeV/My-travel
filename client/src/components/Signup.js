@@ -68,7 +68,7 @@ class Signup extends Component {
             placeholder="********"
           />
           <button class="btnregister" onClick={this.handleFormSubmit} type="submit">Registration</button>
-          {this.state.error && (<p>{this.state.error}</p>)}
+          {this.state.error && (<p class="errormsg">{this.state.error}</p>)}
 
         </form>
         
