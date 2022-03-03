@@ -10,8 +10,9 @@ class User extends Component {
     authentification.logout()
     .then( response => {
       console.log ('response du serveur suite au logout', response)
+      this.props.history.push('/login')
       this.props.updateUser(null)
-      this.props.history.push('/homepage')
+      
     })
     .catch(err => console.log('error', err))
   }

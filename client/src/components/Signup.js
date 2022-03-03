@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Signup extends Component {
  
-  state = { firstname: "", lastname: "", email: "", password: ""}
+  state = { firstname: "", lastname: "", email: "", password: "", error:""}
 
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -13,8 +13,10 @@ class Signup extends Component {
     const email = this.state.email;
     const password = this.state.password;
 
+
     authentification.signup(firstname, lastname, email, password)
       .then(response => {
+        this.setState({error: ""});
         this.setState({ firstname: "", lastname: "", email: "", password: "" });
         /*redirect vers userprofile*/
         console.log(this.props)
@@ -22,8 +24,10 @@ class Signup extends Component {
         this.props.updateUser(response)
         this.props.history.push('/user')
       })
-      .catch(error => this.setState({error})) 
-  }
+
+      .catch(err => this.setState({error: err.response.data.errorMessage}))
+
+    }
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -31,9 +35,9 @@ class Signup extends Component {
   }
 
   render() {
+
     return (
       
-
       <div class="signupgeneral">
         <div>
           <img class="travelpic" src="/pictravel2.png"/>
@@ -64,7 +68,11 @@ class Signup extends Component {
             placeholder="********"
           />
           <button class="btnregister" onClick={this.handleFormSubmit} type="submit">Registration</button>
+          {this.state.error && (<p>{this.state.error}</p>)}
+
         </form>
+        
+        
         <p>Already have an account?
             <Link class="alreadylogin" to={"/login"}>Login</Link>
         </p>

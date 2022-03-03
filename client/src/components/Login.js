@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
  
 class Login extends Component {
 
-  state = {email: "", password: ""}
+  state = {email: "", password: "", error:""}
 
   handleFormSubmit = (event) => {
     event.preventDefault();
@@ -14,11 +14,13 @@ class Login extends Component {
  
   authentification.login(email, password)
       .then(response => {
+          this.setState({error: ""});
           this.setState({ email: "", password: "" });
           this.props.updateUser(response)
           this.props.history.push('/user')
       })
-      .catch( error => console.log(error) )
+      .catch(err => this.setState({error: err.response.data.errorMessage}))
+
   }
 
   handleChange = (event) => {  
@@ -53,6 +55,7 @@ class Login extends Component {
         value={this.state.password} onChange={e => this.handleChange(e)}
       />
         <button class="btnlogin" type="submit">Login</button>
+        {this.state.error && (<p>{this.state.error}</p>)}
     </form>
     <p>Don't have account? 
          <button class="notcount"> <Link to={"/signup"}>Register</Link> </button>
