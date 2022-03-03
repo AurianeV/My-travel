@@ -21,14 +21,11 @@ class User extends Component {
   return (
     <div class="align">
       <img class="account"class="userimg" src="https://www.kindpng.com/picc/m/269-2697881_computer-icons-user-clip-art-transparent-png-icon.png"/>
-      <h1 class="account">{this.props.userInSession.firstname} {this.props.userInSession.lastname}</h1>
+      <h1 class="account"> {this.props.userInSession.firstname} {this.props.userInSession.lastname}</h1>
       <div class="account"> 
-      <p>Birthdate:</p>
-      <p>Age:</p>
-      <p>Gender:</p>
-      <p>My Favorites:</p>
+      
     </div>
-      <button class="btnlogin"><Link to="/edit">Edit profile</Link></button>
+     
     <div>
       {//this.state.userInSession && 
       <button class="btnlogin" onClick={this.onLogout}>Logout</button>
