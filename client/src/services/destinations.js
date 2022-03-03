@@ -1,7 +1,7 @@
 import axios from 'axios';
 export default {
   service: axios.create({
-    baseURL: `${process.env.REACT_APP_APIURL || "http://localhost:5005"}`,
+    baseURL: `${process.env.REACT_APP_APIURL || ""}`,
     withCredentials: true
   }),
   getDestinations(query="") {
